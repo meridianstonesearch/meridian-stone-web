@@ -47,10 +47,7 @@ export default function App() {
       
       <nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
         <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search" className="h-8 md:h-10 w-auto object-contain opacity-40 hover:opacity-100 transition-opacity" />
-        <button 
-          onClick={() => setIsContactOpen(true)}
-          className="bg-[#111111] text-[#F7F6F3] px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
-        >
+        <button onClick={() => setIsContactOpen(true)} className="bg-[#111111] text-[#F7F6F3] px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg">
           Connect
         </button>
       </nav>
@@ -61,17 +58,14 @@ export default function App() {
             <div className="hero-reveal mb-16 md:mb-20">
                <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search Logo" className="h-24 md:h-36 w-auto object-contain brightness-95" />
             </div>
-            
             <div className="hero-reveal flex items-center gap-3 mb-10 opacity-30">
               <div className="h-px w-10 bg-[#111111]" />
               <span className="font-mono text-[10px] uppercase tracking-[0.5em] font-bold">Executive Search</span>
             </div>
-            
             <h1 className="hero-reveal text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-12 max-w-6xl">
               The right direction <br/> 
               <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">changes everything.</span>
             </h1>
-            
             <p className="hero-reveal max-w-3xl mx-auto text-lg md:text-2xl font-medium leading-relaxed opacity-80">
               Founded by Ian Farber, Meridian Stone Search is a boutique executive search firm specializing in renewable energy infrastructure.
             </p>
@@ -94,9 +88,7 @@ export default function App() {
               </div>
             </div>
           </div>
-        </section>
-
-        <section id="specialties" className="py-32 px-6 md:px-12 border-b border-[#111111]/10 bg-[#F7F6F3]">
+        </section><section id="specialties" className="py-32 px-6 md:px-12 border-b border-[#111111]/10 bg-[#F7F6F3]">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-3 mb-16 opacity-40">
               <div className="h-px w-10 bg-[#111111]" />
