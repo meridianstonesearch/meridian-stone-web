@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { X, Phone, Mail, Linkedin, Minus, Briefcase, Users } from 'lucide-react';
+import { X, Phone, Mail, Linkedin, Minus, Briefcase, Users, ChevronDown } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -219,26 +219,36 @@ function ContactOverlay({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
         
         {/* WIRED FORMSPREE */}
         <form action="https://formspree.io/f/mdawneod" method="POST" className="space-y-12">
-          <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
+          <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors relative">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Inquiry Type</label>
-            <select name="inquiry_type" className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none appearance-none cursor-pointer">
-              <option>Organization / Scaling Inquiry</option>
-              <option>Candidate / Leadership Transition</option>
-              <option>General Dialogue</option>
+            <select 
+              name="inquiry_type" 
+              required
+              className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none appearance-none cursor-pointer pr-10"
+            >
+              <option value="" disabled selected>Select an option...</option>
+              <option value="organization">Organization / Scaling Inquiry</option>
+              <option value="candidate">Candidate / Leadership Transition</option>
+              <option value="general">General Dialogue</option>
             </select>
+            <ChevronDown className="absolute bottom-5 right-0 opacity-30 pointer-events-none" size={20} />
           </div>
+          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Full Name</label>
             <input name="name" type="text" required className="w-full bg-transparent py-4 text-2xl font-bold focus:outline-none" />
           </div>
+          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Transmission / Email</label>
             <input name="email" type="email" required className="w-full bg-transparent py-4 text-2xl font-bold focus:outline-none" />
           </div>
+          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Scope / Message</label>
             <textarea name="message" rows={3} required className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none resize-none"></textarea>
           </div>
+          
           <button type="submit" className="w-full bg-[#111111] text-[#F7F6F3] py-8 rounded-full font-black uppercase tracking-widest text-xs hover:invert transition-all shadow-xl">
             Submit Transmission
           </button>
