@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "Boutique executive search firm specializing in renewable energy, solar, storage, and EPC leadership hiring.",
   metadataBase: new URL('https://meridianstonesearch.com'), 
   icons: {
+    // This tells the browser to use your specific PNG logo instead of the generic .ico
     icon: "/Meridian Stone Search logo.png",
     shortcut: "/Meridian Stone Search logo.png",
     apple: "/Meridian Stone Search logo.png",
