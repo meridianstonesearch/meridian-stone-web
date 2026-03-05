@@ -45,7 +45,6 @@ export default function App() {
       
       <ContactOverlay isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       
-      {/* NAVIGATION */}
       <nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
         <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search" className="h-8 md:h-10 w-auto object-contain opacity-40 hover:opacity-100 transition-opacity" />
         <button 
@@ -57,7 +56,6 @@ export default function App() {
       </nav>
 
       <main>
-        {/* HERO SECTION */}
         <section className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-12 text-center pt-20 pb-32">
           <div className="max-w-7xl flex flex-col items-center">
             <div className="hero-reveal mb-16 md:mb-20">
@@ -80,7 +78,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* PHILOSOPHY SECTION */}
         <section className="reveal-section py-40 px-6 md:px-12 bg-[#111111] text-[#F7F6F3]">
           <div className="max-w-5xl mx-auto space-y-16">
             <div className="reveal-item flex items-center gap-4 opacity-30">
@@ -99,14 +96,12 @@ export default function App() {
           </div>
         </section>
 
-        {/* SPECIALTIES SECTION */}
         <section id="specialties" className="py-32 px-6 md:px-12 border-b border-[#111111]/10 bg-[#F7F6F3]">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-center gap-3 mb-16 opacity-40">
               <div className="h-px w-10 bg-[#111111]" />
               <span className="font-mono text-[10px] uppercase tracking-[0.5em] font-bold">Specialties</span>
             </div>
-            
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { title: "Developers & IPPs", content: "Project Development · Asset Management · Engineering · Capital Markets" },
@@ -123,7 +118,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* STRATEGIC ALIGNMENT SECTION */}
         <section className="reveal-section py-40 px-6 md:px-12 bg-white/50">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div className="reveal-item">
@@ -143,7 +137,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* ABOUT IAN */}
         <section id="about" className="reveal-section py-40 px-6 md:px-12">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <div className="lg:col-span-5 reveal-item group">
@@ -166,7 +159,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* CONTACT HUB */}
         <section className="reveal-section py-48 px-6 bg-[#111111] text-[#F7F6F3]">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-20 leading-tight">Start a Dialogue.</h2>
@@ -216,39 +208,29 @@ function ContactOverlay({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
       <button onClick={onClose} className="absolute top-10 right-10 p-2 hover:rotate-90 transition-transform duration-300"><X size={32} /></button>
       <div className="max-w-xl mx-auto mt-20 space-y-16">
         <h2 className="text-5xl font-black uppercase tracking-tighter italic font-serif">Protocol</h2>
-        
-        {/* WIRED FORMSPREE */}
         <form action="https://formspree.io/f/mdawneod" method="POST" className="space-y-12">
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors relative">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Inquiry Type</label>
-            <select 
-              name="inquiry_type" 
-              required
-              className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none appearance-none cursor-pointer pr-10"
-            >
+            <select name="inquiry_type" required className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none appearance-none cursor-pointer pr-10">
               <option value="" disabled selected>Select an option...</option>
-              <option value="organization">Organization / Scaling Inquiry</option>
-              <option value="candidate">Candidate / Leadership Transition</option>
-              <option value="general">General Dialogue</option>
+              <option value="Organization">Organization / Scaling Inquiry</option>
+              <option value="Candidate">Candidate / Leadership Transition</option>
+              <option value="General">General Dialogue</option>
             </select>
             <ChevronDown className="absolute bottom-5 right-0 opacity-30 pointer-events-none" size={20} />
           </div>
-          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Full Name</label>
             <input name="name" type="text" required className="w-full bg-transparent py-4 text-2xl font-bold focus:outline-none" />
           </div>
-          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Transmission / Email</label>
             <input name="email" type="email" required className="w-full bg-transparent py-4 text-2xl font-bold focus:outline-none" />
           </div>
-          
           <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors">
             <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Scope / Message</label>
             <textarea name="message" rows={3} required className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none resize-none"></textarea>
           </div>
-          
           <button type="submit" className="w-full bg-[#111111] text-[#F7F6F3] py-8 rounded-full font-black uppercase tracking-widest text-xs hover:invert transition-all shadow-xl">
             Submit Transmission
           </button>
