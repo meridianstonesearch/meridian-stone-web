@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { X, Phone, Mail, Linkedin, Minus, Briefcase, Users, Award, Check } from 'lucide-react';
+import { X, Phone, Mail, Linkedin, Minus, Briefcase, Users, Award, Check, ChevronDown } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -232,12 +232,28 @@ function ContactOverlay({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
       <button onClick={onClose} className="absolute top-10 right-10 p-2 hover:rotate-90 transition-transform duration-300"><X size={32} /></button>
       <div className="max-w-xl mx-auto mt-20 space-y-16 text-left">
         <h2 className="text-5xl font-black uppercase italic font-serif">Protocol</h2>
-        <form action="https://formspree.io/f/mdawneod" method="POST" className="space-y-12">
-          <input name="name" type="text" placeholder="Full Name" required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]" />
-          <input name="email" type="email" placeholder="Email Address" required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]" />
-          <textarea name="message" placeholder="Message" rows={3} required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-xl font-bold focus:outline-none focus:border-[#111111] resize-none"></textarea>
-          <button type="submit" className="w-full bg-[#111111] text-[#F7F6F3] py-8 rounded-full font-black uppercase tracking-widest text-xs hover:bg-black transition-all shadow-xl">Submit Transmission</button>
-        </form>
+       <form action="https://formspree.io/f/mdawneod" method="POST" className="space-y-12">
+  {/* 1. THE NEW DROPDOWN */}
+  <div className="border-b border-[#111111]/20 focus-within:border-[#111111] transition-colors relative">
+    <label className="block text-[9px] font-black uppercase tracking-widest opacity-40 mb-2">Inquiry Type</label>
+    <select name="inquiry_type" required className="w-full bg-transparent py-4 text-xl font-bold focus:outline-none appearance-none cursor-pointer pr-10">
+      <option value="" disabled selected>Select an option...</option>
+      <option value="Organization">Organization / Scaling Inquiry</option>
+      <option value="Candidate">Candidate / Leadership Transition</option>
+      <option value="General">General Dialogue</option>
+    </select>
+    <ChevronDown className="absolute bottom-5 right-0 opacity-30 pointer-events-none" size={20} />
+  </div>
+
+  {/* 2. THE REST OF THE INPUTS */}
+  <input name="name" type="text" placeholder="Full Name" required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]" />
+  <input name="email" type="email" placeholder="Email Address" required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]" />
+  <textarea name="message" placeholder="Message" rows={3} required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-xl font-bold focus:outline-none focus:border-[#111111] resize-none"></textarea>
+  
+  <button type="submit" className="w-full bg-[#111111] text-[#F7F6F3] py-8 rounded-full font-black uppercase tracking-widest text-xs hover:bg-black transition-all shadow-xl">
+    Submit Transmission
+  </button>
+</form>
       </div>
     </div>
   );
