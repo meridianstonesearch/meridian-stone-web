@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Meridian Stone Search | Renewable Energy Executive Search",
@@ -29,6 +30,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         {children}
         <Analytics />
+        <Script 
+          id="vtag-ai-js" 
+          strategy="afterInteractive" 
+          src="https://r2.leadsy.ai/tag.js" 
+          data-pid="1cMdga9t1VWMy3tqM" 
+          data-version="062024" 
+        />
       </body>
     </html>
   );
