@@ -20,10 +20,12 @@ export const metadata: Metadata = {
     siteName: 'Meridian Stone Search',
     images: [{ url: '/Meridian Stone Search logo.png', width: 1200, height: 630 }],
     locale: 'en_US',
-    type: 'website',
+      type: 'website',
+  },
+  verification: {
+    google: '7066FU3MHwCJjahjcTFWmlauqigrkgipup6quE9JndY',
   },
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
