@@ -1,190 +1,147 @@
-"use client";
-import React from "react";
-
-export default function RolesAndMandatesPage() {
+export default function RolesAndMandates() {
   return (
-    <div className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans antialiased selection:bg-[#111111] selection:text-[#F7F6F3]">
-      <main>
-        <section className="py-40 px-6 md:px-12 text-center border-b border-[#111111]/10">
-          <div className="max-w-5xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-8 opacity-40">
-              <div className="h-px w-10 bg-[#111111]" />
-              <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                Search Coverage
-              </span>
-              <div className="h-px w-10 bg-[#111111]" />
-            </div>
+    <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-32 pb-24">
 
-            <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
-              Roles &amp; Mandates
-            </h1>
+      {/* HERO */}
+      <section className="max-w-5xl mx-auto text-center mb-24">
+        <p className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-6">
+          Roles & Mandates
+        </p>
 
-            <p className="text-xl md:text-3xl font-serif italic opacity-80 mb-10">
-              Search coverage across the renewable energy lifecycle.
-            </p>
+        <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
+          Search coverage across the renewable energy lifecycle.
+        </h1>
 
-            <p className="text-lg md:text-xl max-w-3xl mx-auto opacity-80 leading-relaxed font-medium">
-              Meridian Stone Search partners with developers, EPCs, investors, and growth platforms to hire proven operators across solar, storage, and infrastructure.
-            </p>
-          </div>
-        </section>
+        <p className="text-lg opacity-70 max-w-3xl mx-auto">
+          Meridian Stone Search partners with developers, EPCs, investors, and growth platforms to hire proven operators across solar, storage, and infrastructure.
+        </p>
 
-        <section className="py-32 px-6 md:px-12 border-b border-[#111111]/10 bg-white/50">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif mb-12 leading-tight">
-              From early-stage development through execution and leadership.
-            </h2>
+        <p className="text-sm opacity-60 max-w-3xl mx-auto mt-4">
+          From early-stage development through engineering, EPC execution, construction leadership, and executive buildouts, we support targeted search mandates across the roles that drive project delivery and platform growth.
+        </p>
+      </section>
 
-            <div className="flex flex-wrap justify-center gap-4 text-sm font-medium opacity-70 uppercase tracking-[0.12em]">
-              {[
-                "Development",
-                "Interconnection",
-                "Engineering",
-                "EPC",
-                "Construction",
-                "Asset Management",
-                "Executive Leadership",
-                "Finance & Commercial",
-              ].map((item, i) => (
-                <span key={i} className="border border-[#111111]/20 px-4 py-2 rounded-full">
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
+      {/* ROLE CLUSTERS */}
+      <section className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 mb-24">
 
-        <section className="py-32 px-6 md:px-12 bg-[#F7F6F3]">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
-            {[
-              {
-                title: "Development & Interconnection",
-                roles: [
-                  "Development Engineers",
-                  "Development Managers",
-                  "Interconnection Managers",
-                  "Transmission / Grid Strategy",
-                  "Head of Development",
-                ],
-              },
-              {
-                title: "EPC & Construction",
-                roles: [
-                  "VP of EPC",
-                  "Directors of Construction",
-                  "Project Executives",
-                  "Project Managers",
-                  "Field Operations Leadership",
-                  "Estimating & Preconstruction",
-                ],
-              },
-              {
-                title: "Energy Storage (BESS)",
-                roles: [
-                  "BESS Development",
-                  "Storage Engineering",
-                  "Hybrid Project Leadership",
-                  "EPC Leadership (Storage)",
-                  "Commissioning & O&M",
-                ],
-              },
-              {
-                title: "Engineering & Technical",
-                roles: [
-                  "Electrical Engineers",
-                  "Power Systems Engineers",
-                  "PVSyst / Design Engineers",
-                  "Owner's Engineers",
-                  "Grid Integration",
-                ],
-              },
-              {
-                title: "Finance & Commercial",
-                roles: [
-                  "Project Finance",
-                  "FP&A Leadership",
-                  "Capital Markets",
-                  "Investment Roles",
-                  "Commercial Strategy",
-                ],
-              },
-              {
-                title: "Executive & Platform Buildouts",
-                roles: [
-                  "CEO / COO",
-                  "VP & SVP Leadership",
-                  "Platform Buildouts",
-                  "Strategic Expansion Hires",
-                  "Leadership Upgrades",
-                ],
-              },
-            ].map((group, i) => (
-              <div key={i} className="space-y-6 border-t border-[#111111]/10 pt-8">
-                <h3 className="text-2xl font-black uppercase tracking-tight">
-                  {group.title}
-                </h3>
+        {/* DEVELOPMENT */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">Development & Interconnection</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>Development Engineer</li>
+            <li>Development Manager</li>
+            <li>Interconnection Manager</li>
+            <li>Transmission / Grid Strategy</li>
+            <li>Head of Development</li>
+          </ul>
+        </div>
 
-                <ul className="space-y-2 text-lg opacity-80 leading-relaxed font-medium">
-                  {group.roles.map((role, idx) => (
-                    <li key={idx}>— {role}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
+        {/* EPC */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">EPC & Construction</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>VP of EPC</li>
+            <li>Director of Construction</li>
+            <li>Project Executive</li>
+            <li>Project Manager</li>
+            <li>Field Operations Leadership</li>
+            <li>Estimating / Preconstruction</li>
+          </ul>
+        </div>
 
-        <section className="py-32 px-6 md:px-12 border-t border-[#111111]/10 bg-white">
-          <div className="max-w-5xl mx-auto text-center space-y-10">
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
-              Typical mandates include:
-            </h2>
+        {/* BESS */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">Energy Storage (BESS)</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>BESS Development</li>
+            <li>Storage Engineering</li>
+            <li>Hybrid Project Leadership</li>
+            <li>EPC Leadership, Storage</li>
+            <li>Commissioning & O&M</li>
+          </ul>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left text-lg opacity-80 font-medium leading-relaxed">
-              {[
-                "Confidential replacement searches",
-                "Growth-stage team buildouts",
-                "First-in-market hires",
-                "Leadership upgrades",
-                "Platform expansion mandates",
-                "Retained & strategic search engagements",
-              ].map((item, i) => (
-                <div key={i}>— {item}</div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* ENGINEERING */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">Engineering & Technical</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>Electrical Engineer</li>
+            <li>Power Systems Engineer</li>
+            <li>PVSyst / Design Engineer</li>
+            <li>Owner’s Engineer</li>
+            <li>Grid Integration</li>
+          </ul>
+        </div>
 
-        <section className="py-40 px-6 bg-[#111111] text-[#F7F6F3] text-center">
-          <div className="max-w-3xl mx-auto space-y-10">
-            <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight">
-              Discuss a Search Mandate
-            </h2>
+        {/* FINANCE */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">Finance & Commercial</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>Project Finance</li>
+            <li>FP&A Leadership</li>
+            <li>Capital Markets</li>
+            <li>Investment Roles</li>
+            <li>Commercial Strategy</li>
+          </ul>
+        </div>
 
-            <p className="text-lg opacity-70 leading-relaxed font-medium">
-              If you are scaling a solar, storage, or EPC platform, Meridian Stone Search can support targeted hiring across your team.
-            </p>
+        {/* EXEC */}
+        <div className="border border-black/10 p-8">
+          <h3 className="font-black mb-4">Executive & Platform Buildouts</h3>
+          <ul className="space-y-2 text-sm opacity-70">
+            <li>CEO / COO</li>
+            <li>VP / SVP Leadership</li>
+            <li>Platform Buildouts</li>
+            <li>Strategic Expansion Hires</li>
+            <li>Leadership Upgrades</li>
+          </ul>
+        </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+      </section>
 
-  <a
-    href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate%20Inquiry"
-    className="inline-flex bg-white text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
-  >
-    Email 
-  </a>
+      {/* MANDATE TYPES */}
+      <section className="max-w-4xl mx-auto mb-24 text-center">
+        <h2 className="text-2xl md:text-3xl font-black mb-6">
+          Typical mandates include
+        </h2>
 
-  <a
-    href="tel:18456253864"
-    className="inline-flex border border-white/30 text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
-  >
-    Call Direct
-  </a>
+        <div className="grid md:grid-cols-2 gap-4 text-sm opacity-70">
+          <div>Confidential replacements</div>
+          <div>Team buildouts</div>
+          <div>First-in-market hires</div>
+          <div>Leadership upgrades</div>
+          <div>Platform expansion</div>
+          <div>Retained / strategic searches</div>
+        </div>
+      </section>
 
-</div>
-          </div>
-        </section>
-      </main>
-    </div>
+      {/* CTA */}
+      <section className="text-center max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black mb-4">
+          Discuss a search mandate
+        </h2>
+
+        <p className="opacity-70 mb-8">
+          If you are scaling a solar, storage, or EPC platform, Meridian Stone Search can support targeted hiring across your team.
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate%20Inquiry"
+            className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+          >
+            Email Ian
+          </a>
+
+          <a
+            href="tel:18456253864"
+            className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all"
+          >
+            Call Direct
+          </a>
+        </div>
+      </section>
+
+    </main>
   );
 }
