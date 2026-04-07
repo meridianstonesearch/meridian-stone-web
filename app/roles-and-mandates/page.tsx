@@ -165,12 +165,23 @@ export default function RolesAndMandatesPage() {
               If you are scaling a solar, storage, or EPC platform, Meridian Stone Search can support targeted hiring across your team.
             </p>
 
-            <a
-              href="/"
-              className="inline-flex bg-white text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
-            >
-              Return Home
-            </a>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+
+  <a
+    href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate%20Inquiry"
+    className="inline-flex bg-white text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+  >
+    Email Ian
+  </a>
+
+  <a
+    href="tel:18456253864"
+    className="inline-flex border border-white/30 text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all"
+  >
+    Call Direct
+  </a>
+
+</div>
           </div>
         </section>
       </main>
