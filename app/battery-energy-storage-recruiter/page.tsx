@@ -1,73 +1,75 @@
 export default function BatteryEnergyStorageRecruiter() {
   return (
     <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-32 pb-24">
+
       {/* HERO */}
       <section className="max-w-5xl mx-auto text-center mb-24">
         <p className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-6">
-          Battery Energy Storage Recruitment
+          Battery Energy Storage Recruiter
         </p>
 
         <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-          Battery energy storage recruiters for utility-scale and grid infrastructure teams.
+          Battery energy storage recruiters for utility-scale BESS, solar + storage, and grid infrastructure teams.
         </h1>
 
         <p className="text-lg opacity-70 max-w-3xl mx-auto">
-          Meridian Stone Search partners with developers, EPCs, and investors building battery energy storage systems (BESS) across the U.S.
+          Meridian Stone Search partners with developers, EPCs, and investors hiring across battery energy storage systems (BESS), solar + storage, and grid-scale infrastructure.
         </p>
 
         <p className="text-sm opacity-60 max-w-3xl mx-auto mt-4">
-          We support hiring across development, engineering, EPC execution, construction, and executive leadership — placing professionals who have delivered real projects, not just resumes.
+          We support targeted search mandates across development, interconnection, engineering, EPC execution, construction, and executive leadership — placing professionals who have delivered real projects.
         </p>
       </section>
 
       {/* MARKET CONTEXT */}
       <section className="max-w-4xl mx-auto mb-24">
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-center">
-          The BESS hiring market is tight — and getting tighter
+          Battery energy storage hiring is one of the most constrained markets in energy
         </h2>
 
         <p className="opacity-70 mb-4">
-          Battery storage is one of the fastest-growing segments in the U.S. energy market, with new capacity being deployed alongside solar and grid infrastructure.
+          Utility-scale battery storage (BESS) is scaling rapidly across the U.S., driven by grid reliability needs, renewable integration, and increasing power demand from data centers and electrification.
         </p>
 
         <p className="opacity-70 mb-4">
-          But the talent pool has not scaled at the same pace. Experienced professionals with hands-on utility-scale storage experience are limited, highly specialized, and already employed.
+          But the talent pool has not kept pace. Experienced professionals across interconnection, EPC execution, and grid integration remain extremely limited — and are typically already deployed across active projects.
         </p>
 
         <p className="opacity-70">
-          The result is a market where the strongest candidates are not applying to job postings — they are executing projects, managing interconnection, and being pulled across multiple platforms simultaneously.
+          The strongest candidates are not applying to job postings. They are executing projects, solving real constraints, and being approached directly.
         </p>
       </section>
 
-      {/* WHAT WE DO */}
+      {/* COVERAGE */}
       <section className="max-w-5xl mx-auto mb-24">
         <h2 className="text-2xl md:text-3xl font-black mb-10 text-center">
-          Search coverage across battery storage
+          Battery energy storage search coverage
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
+
           <div className="border border-black/10 p-8">
-            <h3 className="font-black mb-4">Development &amp; Interconnection</h3>
+            <h3 className="font-black mb-4">Development & Interconnection</h3>
             <ul className="space-y-2 text-sm opacity-70">
               <li>BESS Development Managers</li>
               <li>Interconnection Engineers</li>
-              <li>Transmission &amp; Grid Strategy</li>
-              <li>Permitting &amp; Siting</li>
+              <li>Transmission & Grid Strategy</li>
+              <li>Permitting & Siting</li>
             </ul>
           </div>
 
           <div className="border border-black/10 p-8">
-            <h3 className="font-black mb-4">Engineering &amp; Technical</h3>
+            <h3 className="font-black mb-4">Engineering & Technical</h3>
             <ul className="space-y-2 text-sm opacity-70">
               <li>Battery Systems Engineers</li>
               <li>Power Systems Engineers</li>
-              <li>BMS / Controls</li>
+              <li>BMS / Controls Engineers</li>
               <li>Grid Integration Specialists</li>
             </ul>
           </div>
 
           <div className="border border-black/10 p-8">
-            <h3 className="font-black mb-4">EPC &amp; Construction</h3>
+            <h3 className="font-black mb-4">EPC & Construction</h3>
             <ul className="space-y-2 text-sm opacity-70">
               <li>VP of EPC (Storage)</li>
               <li>Construction Directors</li>
@@ -77,14 +79,15 @@ export default function BatteryEnergyStorageRecruiter() {
           </div>
 
           <div className="border border-black/10 p-8">
-            <h3 className="font-black mb-4">Commercial &amp; Finance</h3>
+            <h3 className="font-black mb-4">Commercial & Finance</h3>
             <ul className="space-y-2 text-sm opacity-70">
-              <li>Project Finance (Storage)</li>
+              <li>Project Finance (BESS)</li>
               <li>Structured Finance</li>
-              <li>Origination &amp; Offtake</li>
+              <li>Origination & Offtake</li>
               <li>Commercial Strategy</li>
             </ul>
           </div>
+
         </div>
       </section>
 
@@ -95,38 +98,40 @@ export default function BatteryEnergyStorageRecruiter() {
         </h2>
 
         <p className="opacity-70 mb-4">
-          The strongest battery storage professionals are not actively applying. Many are already deployed across utility-scale projects, often receiving multiple inbound approaches per week.
+          The strongest battery energy storage professionals are not actively looking. Many are already embedded in utility-scale projects and are highly selective about opportunities.
         </p>
 
         <p className="opacity-70">
-          Successful hiring in this market requires direct access, technical credibility, and the ability to engage passive candidates who are not responding to traditional recruiting channels.
+          Successful hiring in BESS requires direct access, technical credibility, and the ability to engage passive candidates — not reliance on inbound applications.
         </p>
       </section>
 
-      {/* MANDATES */}
+      {/* INTERNAL LINKING (VERY IMPORTANT FOR SEO) */}
       <section className="max-w-4xl mx-auto mb-24 text-center">
         <h2 className="text-2xl md:text-3xl font-black mb-6">
-          Typical battery storage mandates
+          Broader renewable energy search coverage
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-4 text-sm opacity-70">
-          <div>Utility-scale BESS development teams</div>
-          <div>EPC leadership buildouts</div>
-          <div>Hybrid solar + storage platforms</div>
-          <div>Grid integration hiring</div>
-          <div>Executive leadership hires</div>
-          <div>Confidential replacements</div>
-        </div>
+        <p className="opacity-70 mb-6">
+          Meridian Stone Search supports hiring across solar, storage, EPC, and infrastructure platforms nationwide.
+        </p>
+
+        <a
+          href="/roles-and-mandates"
+          className="underline opacity-70 hover:opacity-100 transition-all"
+        >
+          View full roles & mandates coverage
+        </a>
       </section>
 
       {/* CTA */}
       <section className="text-center max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-black mb-4">
-          Discuss a battery storage search mandate
+          Discuss a battery energy storage search mandate
         </h2>
 
         <p className="opacity-70 mb-8">
-          If you are scaling a battery energy storage platform, we can support targeted hiring across your team.
+          If you are scaling a BESS, solar + storage, or grid infrastructure platform, we can support targeted hiring across your team.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -145,6 +150,7 @@ export default function BatteryEnergyStorageRecruiter() {
           </a>
         </div>
       </section>
+
     </main>
   );
 }
