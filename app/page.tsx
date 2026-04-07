@@ -150,6 +150,58 @@ export default function App() {
           </div>
         </section>
 
+{/* ROLES & MANDATES TEASER */}
+<section className="py-32 px-6 md:px-12 bg-white border-b border-[#111111]/10">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex items-center gap-3 mb-16 opacity-40">
+      <div className="h-px w-10 bg-[#111111]" />
+      <span className="font-mono text-[10px] uppercase tracking-[0.5em] font-bold">
+        Roles & Mandates
+      </span>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
+      <div>
+        <h2 className="text-4xl md:text-6xl font-light italic font-serif leading-tight mb-8">
+          Search coverage across the renewable energy lifecycle.
+        </h2>
+        <p className="text-lg md:text-xl opacity-80 leading-relaxed font-medium max-w-2xl">
+          From development and interconnection through EPC, construction, finance,
+          and executive leadership, we support targeted mandates across the roles
+          that drive execution.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {[
+          "Development & Interconnection",
+          "EPC & Construction",
+          "Energy Storage (BESS)",
+          "Engineering & Technical",
+          "Finance & Commercial",
+          "Executive & Platform Buildouts",
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="border border-[#111111]/10 bg-[#F7F6F3] px-5 py-5 text-sm font-bold uppercase tracking-[0.08em] opacity-80"
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="flex justify-center">
+      <a
+        href="/roles-and-mandates"
+        className="inline-flex bg-[#111111] text-[#F7F6F3] px-8 py-4 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
+      >
+        View Full Search Coverage
+      </a>
+    </div>
+  </div>
+</section>
+        
         {/* ABOUT MERIDIAN STONE (PART 2 - APPROACH) */}
         <section className="reveal-section py-40 px-6 md:px-12 bg-white/50">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
