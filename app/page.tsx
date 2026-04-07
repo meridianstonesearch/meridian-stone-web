@@ -69,7 +69,7 @@ export default function App() {
             </p>
             
             <p className="hero-reveal max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80 mb-12">
-              Meridian Stone Search operates with the rigor of a national search firm and the agility of a boutique partner. We partner directly with developers, EPCs, and investors to deliver disciplined, performance-aligned search execution.
+              Meridian Stone Search combines the rigor of a national search firm with the precision of a boutique partner. We work directly with developers, EPCs, and investors to hire proven operators across development, interconnection, construction, and executive leadership — delivering disciplined, performance-aligned search execution.
             </p>
 
             <div className="hero-reveal grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-left max-w-4xl mx-auto bg-white/50 p-8 border border-[#111111]/5">
