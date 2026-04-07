@@ -11,22 +11,35 @@ export default function App() {
   const mainRef = useRef(null);
 
   useEffect(() => {
-    window.history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
+  window.history.scrollRestoration = 'manual';
+  window.scrollTo(0, 0);
 
-    let ctx = gsap.context(() => {
-      gsap.from(".hero-reveal", { y: 30, opacity: 0, duration: 1.2, stagger: 0.2, ease: "power3.out" });
+  let ctx = gsap.context(() => {
+    gsap.from(".hero-reveal", { y: 30, opacity: 0, duration: 1.2, stagger: 0.2, ease: "power3.out" });
 
-      gsap.utils.toArray(".reveal-section").forEach((section) => {
-        gsap.from((section as HTMLElement).querySelectorAll(".reveal-item"), {
-          scrollTrigger: { trigger: section as HTMLElement, start: "top 85%" },
-          y: 20, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out"
-        });
+    gsap.from(".nav-reveal a", {
+      y: -8,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.08,
+      ease: "power2.out",
+      delay: 0.3,
+    });
+
+    gsap.utils.toArray(".reveal-section").forEach((section) => {
+      gsap.from((section as HTMLElement).querySelectorAll(".reveal-item"), {
+        scrollTrigger: { trigger: section as HTMLElement, start: "top 85%" },
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power2.out"
       });
-    }, mainRef);
-    return () => ctx.revert();
-  }, []);
+    });
+  }, mainRef);
 
+  return () => ctx.revert();
+}, []);
   return (
     <div ref={mainRef} className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans selection:bg-[#111111] selection:text-[#F7F6F3] antialiased">
       
@@ -41,18 +54,23 @@ export default function App() {
   </div>
 
   {/* CENTER — NAV LINKS */}
-  <div className="hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em]">
-    
-    <a href="/roles-and-mandates" className="opacity-60 hover:opacity-100 transition-all">
-      Roles
-    </a>
+  <div className="nav-reveal hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em]">
+  <a
+    href="/roles-and-mandates"
+    className="group relative opacity-60 hover:opacity-100 transition-all duration-300"
+  >
+    Roles
+    <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
+  </a>
 
-    <a href="/battery-energy-storage-recruiter" className="opacity-60 hover:opacity-100 transition-all">
-      BESS
-    </a>
-
-  </div>
-
+  <a
+    href="/battery-energy-storage-recruiter"
+    className="group relative opacity-60 hover:opacity-100 transition-all duration-300"
+  >
+    BESS
+    <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
+  </a>
+</div>
   {/* RIGHT — CTA */}
   <button 
     onClick={() => setIsContactOpen(true)}
