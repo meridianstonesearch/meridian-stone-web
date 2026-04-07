@@ -81,6 +81,31 @@ export default function App() {
           </div>
         </section>
 
+        {/* PROBLEM SECTION */}
+<section className="py-32 px-6 md:px-12 bg-white border-t border-[#111111]/10">
+  <div className="max-w-5xl mx-auto text-center space-y-12">
+
+    <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+      The best talent in renewables isn’t applying.
+    </h2>
+
+    <div className="space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium">
+      <p>
+        The people building utility-scale solar, battery storage, and EPC platforms are already deployed — managing projects, navigating interconnection, and driving execution.
+      </p>
+
+      <p>
+        At the senior level, job boards and inbound applications rarely surface the operators actually capable of delivering projects.
+      </p>
+
+      <p className="font-semibold text-[#111111]">
+        That’s where targeted search becomes critical.
+      </p>
+    </div>
+
+  </div>
+</section>
+        
         {/* ABOUT MERIDIAN STONE (PART 1) */}
         <section className="reveal-section py-40 px-6 md:px-12 bg-[#111111] text-[#F7F6F3]">
           <div className="max-w-5xl mx-auto space-y-16">
