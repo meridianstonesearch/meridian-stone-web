@@ -171,7 +171,7 @@ export default function RolesAndMandatesPage() {
     href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate%20Inquiry"
     className="inline-flex bg-white text-black px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
   >
-    Email Ian
+    Email 
   </a>
 
   <a
