@@ -167,7 +167,7 @@ export default function App() {
         </h2>
         <p className="text-lg md:text-xl opacity-80 leading-relaxed font-medium max-w-2xl">
           From development and interconnection through EPC, construction, finance,
-          and executive leadership, we support targeted mandates across the roles
+          and executive leadership, we support targeted search mandates across the roles
           that drive execution.
         </p>
       </div>
