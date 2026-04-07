@@ -33,15 +33,17 @@ export default function App() {
       <ContactOverlay isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
       
       {/* NAVIGATION */}
-     <nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
-  <div className="flex items-center">
-    <img src="/Meridian Stone Search logo.png" alt="Logo" className="h-6 md:h-8 w-auto opacity-90" />
-  </div>
+<nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
+  <div className="flex items-center gap-6">
+    <img
+      src="/Meridian Stone Search logo.png"
+      alt="Logo"
+      className="h-6 md:h-8 w-auto opacity-90"
+    />
 
-  <div className="hidden md:flex items-center gap-8">
     <a
       href="/roles-and-mandates"
-      className="text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all"
+      className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all"
     >
       Roles & Mandates
     </a>
