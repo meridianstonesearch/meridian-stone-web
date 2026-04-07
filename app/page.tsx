@@ -150,7 +150,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
             <div className="reveal-item sticky top-32">
               <img 
-                src="/ian-farber-headshot.jpg" 
+                src="/ian_headshot 2.jpg" 
                 alt="Ian Farber" 
                 className="w-full max-w-md grayscale hover:grayscale-0 transition-all duration-700 rounded-sm shadow-2xl" 
               />
