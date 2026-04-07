@@ -17,15 +17,6 @@ export default function App() {
   let ctx = gsap.context(() => {
     gsap.from(".hero-reveal", { y: 30, opacity: 0, duration: 1.2, stagger: 0.2, ease: "power3.out" });
 
-    gsap.from(".nav-reveal a", {
-      y: -8,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.08,
-      ease: "power2.out",
-      delay: 0.3,
-    });
-
     gsap.utils.toArray(".reveal-section").forEach((section) => {
       gsap.from((section as HTMLElement).querySelectorAll(".reveal-item"), {
         scrollTrigger: { trigger: section as HTMLElement, start: "top 85%" },
@@ -47,15 +38,16 @@ export default function App() {
       
       {/* NAVIGATION */}
 <nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
+  <div className="flex items-center gap-4 md:gap-6 shrink-0">
+    <img
+      src="/Meridian Stone Search logo.png"
+      alt="Logo"
+      className="h-6 md:h-8 w-auto opacity-90"
+    />
 
-  <div className="flex items-center">
-    <img src="/Meridian Stone Search logo.png" alt="Logo" className="h-6 md:h-8 w-auto opacity-90" />
-  </div>
-
-  <div className="nav-reveal flex items-center gap-4 md:gap-8 text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em]">
     <a
       href="/roles-and-mandates"
-      className="group relative opacity-60 hover:opacity-100 transition-all duration-300"
+      className="group relative text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all duration-300 shrink-0"
     >
       Roles
       <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
@@ -63,7 +55,7 @@ export default function App() {
 
     <a
       href="/battery-energy-storage-recruiter"
-      className="group relative opacity-60 hover:opacity-100 transition-all duration-300"
+      className="group relative text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all duration-300 shrink-0"
     >
       BESS
       <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
@@ -72,12 +64,11 @@ export default function App() {
 
   <button
     onClick={() => setIsContactOpen(true)}
-    className="bg-[#111111] text-[#F7F6F3] px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
+    className="shrink-0 bg-[#111111] text-[#F7F6F3] px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
   >
     Connect
   </button>
 </nav>
-
       <main>
         {/* HERO */}
         <section className="relative min-h-screen flex flex-col justify-center items-center px-6 text-center pt-56 pb-32">
