@@ -34,29 +34,34 @@ export default function App() {
       
       {/* NAVIGATION */}
 <nav className="fixed top-0 left-0 w-full z-40 flex items-center justify-between px-6 md:px-12 py-6 md:py-8 bg-[#F7F6F3]/90 backdrop-blur-md border-b border-[#111111]/5">
-  <div className="flex items-center gap-6">
-    <img
-      src="/Meridian Stone Search logo.png"
-      alt="Logo"
-      className="h-6 md:h-8 w-auto opacity-90"
-    />
 
-    <a
-      href="/roles-and-mandates"
-      className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all"
-    >
-      Roles & Mandates
-    </a>
+  {/* LEFT — LOGO */}
+  <div className="flex items-center">
+    <img src="/Meridian Stone Search logo.png" alt="Logo" className="h-6 md:h-8 w-auto opacity-90" />
   </div>
 
-  <button
+  {/* CENTER — NAV LINKS */}
+  <div className="hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em]">
+    
+    <a href="/roles-and-mandates" className="opacity-60 hover:opacity-100 transition-all">
+      Roles
+    </a>
+
+    <a href="/battery-energy-storage-recruiter" className="opacity-60 hover:opacity-100 transition-all">
+      BESS
+    </a>
+
+  </div>
+
+  {/* RIGHT — CTA */}
+  <button 
     onClick={() => setIsContactOpen(true)}
     className="bg-[#111111] text-[#F7F6F3] px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
   >
     Connect
   </button>
-</nav>
 
+</nav>
       <main>
         {/* HERO */}
         <section className="relative min-h-screen flex flex-col justify-center items-center px-6 text-center pt-56 pb-32">
