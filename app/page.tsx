@@ -1,4 +1,5 @@
 "use client";
+import SiteNav from "@/components/SiteNav";
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
