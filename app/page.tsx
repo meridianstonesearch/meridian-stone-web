@@ -206,7 +206,7 @@ export default function App() {
         {/* CTA BUTTONS */}
         <section className="reveal-section py-48 px-6 bg-[#111111] text-[#F7F6F3]">
           <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-20 leading-tight">Start a Dialogue.</h2>
+            <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tighter mb-20 leading-tight">Request a Search.</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/10 border border-white/10 mb-20 shadow-2xl">
               <button onClick={() => setIsContactOpen(true)} className="group bg-[#111111] p-16 flex flex-col items-center hover:bg-[#1a1a1a] transition-all">
                 <Users className="mb-6 opacity-40 group-hover:opacity-100 group-hover:scale-110 transition-all" size={32} />
@@ -275,7 +275,7 @@ function ContactOverlay({ isOpen, onClose }: { isOpen: boolean, onClose: () => v
   <textarea name="message" placeholder="Message" rows={3} required className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-xl font-bold focus:outline-none focus:border-[#111111] resize-none"></textarea>
   
   <button type="submit" className="w-full bg-[#111111] text-[#F7F6F3] py-8 rounded-full font-black uppercase tracking-widest text-xs hover:bg-black transition-all shadow-xl">
-    Submit Transmission
+    Start a Search
   </button>
 </form>
       </div>
