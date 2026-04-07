@@ -86,7 +86,7 @@ export default function App() {
   <div className="max-w-5xl mx-auto text-center space-y-12">
 
     <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
-      The best talent in renewables isn’t applying.
+      The best talent in renewables aren’t applying.
     </h2>
 
     <div className="space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium">
