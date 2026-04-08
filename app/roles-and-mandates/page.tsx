@@ -1,7 +1,9 @@
+import SiteNav from "@/components/SiteNav";
 export default function RolesAndMandates() {
-  return (
-    <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-32 pb-24">
-
+ return (
+    <>
+      <SiteNav />
+      <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-32 pb-24">
       {/* HERO */}
       <section className="max-w-5xl mx-auto text-center mb-24">
         <p className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-6">
@@ -142,6 +144,6 @@ export default function RolesAndMandates() {
         </div>
       </section>
 
-    </main>
-  );
-}
+        </main>
+  </>
+);
