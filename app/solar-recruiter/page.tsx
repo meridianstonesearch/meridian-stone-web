@@ -247,7 +247,7 @@ export default function SolarRecruiterPage() {
         {/* CTA */}
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
-            Discuss a solar search mandate
+            Discuss a solar hiring mandate
           </h2>
 
           <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">
