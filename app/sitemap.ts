@@ -27,6 +27,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: "https://meridianstonesearch.com/development-recruiter",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: "https://meridianstonesearch.com/renewable-energy-finance-recruiter",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: "https://meridianstonesearch.com/epc-construction-recruiter",
       lastModified: new Date(),
       changeFrequency: "monthly",
