@@ -1,5 +1,10 @@
 import SiteNav from "@/components/SiteNav";
 
+export const metadata = {
+  title: "Battery Energy Storage Executive Search | Meridian Stone Search",
+  description:
+    "Executive search across utility-scale battery storage, solar plus storage, and grid infrastructure platforms. Meridian Stone Search supports targeted hiring across development, interconnection, engineering, EPC, construction, and leadership.",
+};
 export default function BatteryEnergyStorageRecruiter() {
   return (
     <>
