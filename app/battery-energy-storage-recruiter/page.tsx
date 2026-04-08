@@ -11,7 +11,7 @@ export default function BatteryEnergyStorageRecruiter() {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight">
-          Battery energy storage recruiters for utility-scale BESS, solar + storage, and grid infrastructure teams.
+          Executive search across utility-scale BESS, solar + storage, and grid infrastructure platforms.
         </h1>
 
         <p className="text-lg opacity-70 max-w-3xl mx-auto">
@@ -26,7 +26,7 @@ export default function BatteryEnergyStorageRecruiter() {
       {/* MARKET CONTEXT */}
       <section className="max-w-4xl mx-auto mb-24">
         <h2 className="text-2xl md:text-3xl font-black mb-6 text-center">
-          Battery energy storage hiring is one of the most constrained markets in energy
+          BESS hiring is one of the most constrained markets in energy.
         </h2>
 
         <p className="opacity-70 mb-4">
@@ -45,7 +45,7 @@ export default function BatteryEnergyStorageRecruiter() {
       {/* COVERAGE */}
       <section className="max-w-5xl mx-auto mb-24">
         <h2 className="text-2xl md:text-3xl font-black mb-10 text-center">
-          Battery energy storage search coverage
+          Battery Energy Storage Search Coverage:
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -111,7 +111,7 @@ export default function BatteryEnergyStorageRecruiter() {
       {/* INTERNAL LINKING (VERY IMPORTANT FOR SEO) */}
       <section className="max-w-4xl mx-auto mb-24 text-center">
         <h2 className="text-2xl md:text-3xl font-black mb-6">
-          Broader renewable energy search coverage
+          Broader Renewable Energy search coverage
         </h2>
 
         <p className="opacity-70 mb-6">
