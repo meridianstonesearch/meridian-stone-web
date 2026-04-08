@@ -195,7 +195,7 @@ export default function BatteryEnergyStorageRecruiter() {
           </div>
 
           <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">
-            This is not a volume recruiting market.
+            This is not a volume hiring market.
           </h2>
 
           <p className="opacity-80 mb-4 text-lg md:text-xl leading-relaxed font-medium">
@@ -207,28 +207,44 @@ export default function BatteryEnergyStorageRecruiter() {
           </p>
         </section>
 
-        {/* INTERNAL LINK */}
-        <section className="max-w-4xl mx-auto mb-24 text-center">
-          <div className="flex items-center justify-center gap-3 mb-5 opacity-40">
-            <div className="h-px w-10 bg-[#111111]" />
-            <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-              Broader Search Coverage
-            </span>
-            <div className="h-px w-10 bg-[#111111]" />
-          </div>
+        {/* RELATED SEARCH COVERAGE */}
+<section className="max-w-5xl mx-auto mb-24 text-center">
+  <div className="flex items-center justify-center gap-3 mb-5 opacity-40">
+    <div className="h-px w-10 bg-[#111111]" />
+    <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
+      Related Search Coverage
+    </span>
+    <div className="h-px w-10 bg-[#111111]" />
+  </div>
 
-          <p className="opacity-70 mb-6 text-lg leading-relaxed font-medium">
-            We support hiring across solar, storage, EPC, and infrastructure platforms nationwide.
-          </p>
+  <p className="opacity-70 mb-10 text-lg leading-relaxed font-medium max-w-3xl mx-auto">
+    Meridian Stone Search supports targeted hiring across battery storage, solar, EPC, and broader renewable energy platform buildouts.
+  </p>
 
-          <a
-            href="/roles-and-mandates"
-            className="underline opacity-70 hover:opacity-100 transition-all"
-          >
-            View full roles & mandates coverage
-          </a>
-        </section>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
+    <a
+      href="/solar-recruiter"
+      className="underline opacity-70 hover:opacity-100 transition-all"
+    >
+      Solar Executive Search
+    </a>
 
+    <a
+      href="/epc-construction-recruiter"
+      className="underline opacity-70 hover:opacity-100 transition-all"
+    >
+      EPC & Construction Search
+    </a>
+
+    <a
+      href="/roles-and-mandates"
+      className="underline opacity-70 hover:opacity-100 transition-all"
+    >
+      Roles & Mandates
+    </a>
+  </div>
+</section>
+        
         {/* CTA */}
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
