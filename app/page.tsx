@@ -300,6 +300,38 @@ export default function App() {
         </section>
       </main>
 
+      <section className="text-center max-w-3xl mx-auto mt-32">
+  <h2 className="text-3xl md:text-4xl font-black mb-4">
+    Discuss a search mandate
+  </h2>
+
+  <p className="opacity-70 mb-4">
+    If you are scaling a solar, battery storage, or EPC platform, Meridian Stone Search supports targeted hiring across development, engineering, construction, and executive leadership.
+  </p>
+
+  <a
+    href="/roles-and-mandates"
+    className="inline-block text-sm underline opacity-60 hover:opacity-100 transition-all mb-8"
+  >
+    View roles & mandates coverage
+  </a>
+
+  <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+    <a
+      href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate"
+      className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+    >
+      Email Ian
+    </a>
+
+    <a
+      href="tel:18456253864"
+      className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all"
+    >
+      Call Direct
+    </a>
+  </div>
+</section>
       {/* FOOTER */}
       <footer className="py-20 px-6 md:px-12 border-t border-[#111111]/10 bg-[#F7F6F3]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
