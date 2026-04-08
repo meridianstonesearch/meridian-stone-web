@@ -1,4 +1,9 @@
 import SiteNav from "@/components/SiteNav";
+export const metadata = {
+  title: "Roles & Mandates",
+  description:
+    "Explore Meridian Stone Search coverage across renewable energy hiring mandates, including development, interconnection, EPC, battery storage, finance, construction, and executive leadership.",
+};
 export default function RolesAndMandates() {
  return (
     <>
