@@ -39,8 +39,15 @@ export default function SiteNav({ onConnect }: SiteNavProps) {
           Solar
           <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
         </a>
-      </div>
-
+     
+      <a
+  href="/epc-construction-recruiter"
+  className="group relative text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em] opacity-60 hover:opacity-100 transition-all duration-300 shrink-0"
+>
+  EPC
+  <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
+</a>
+ </div>
       {onConnect ? (
         <button
           onClick={onConnect}
