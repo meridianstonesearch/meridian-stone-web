@@ -206,40 +206,42 @@ export default function EPCConstructionRecruiterPage() {
 
        {/* RELATED SEARCH COVERAGE */}
 <section className="max-w-5xl mx-auto mb-24 text-center">
-  <div className="flex items-center justify-center gap-3 mb-5 opacity-40">
-    <div className="h-px w-10 bg-[#111111]" />
-    <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-      Related Search Coverage
-    </span>
-    <div className="h-px w-10 bg-[#111111]" />
-  </div>
+ <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
+  <a
+    href="/development-recruiter"
+    className="underline opacity-70 hover:opacity-100 transition-all"
+  >
+    Development Search
+  </a>
 
-  <p className="opacity-70 mb-10 text-lg leading-relaxed font-medium max-w-3xl mx-auto">
-    Meridian Stone Search supports targeted hiring across EPC, solar, battery storage, and broader renewable energy platform buildouts.
-  </p>
+  <a
+    href="/renewable-energy-finance-recruiter"
+    className="underline opacity-70 hover:opacity-100 transition-all"
+  >
+    Finance Search
+  </a>
 
-  <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
-    <a
-      href="/battery-energy-storage-recruiter"
-      className="underline opacity-70 hover:opacity-100 transition-all"
-    >
-      Battery Storage Search
-    </a>
+  <a
+    href="/battery-energy-storage-recruiter"
+    className="underline opacity-70 hover:opacity-100 transition-all"
+  >
+    Battery Storage Search
+  </a>
 
-    <a
-      href="/solar-recruiter"
-      className="underline opacity-70 hover:opacity-100 transition-all"
-    >
-      Solar Executive Search
-    </a>
+  <a
+    href="/solar-recruiter"
+    className="underline opacity-70 hover:opacity-100 transition-all"
+  >
+    Solar Executive Search
+  </a>
 
-    <a
-      href="/roles-and-mandates"
-      className="underline opacity-70 hover:opacity-100 transition-all"
-    >
-      Roles &amp; Mandates
-    </a>
-  </div>
+  <a
+    href="/roles-and-mandates"
+    className="underline opacity-70 hover:opacity-100 transition-all"
+  >
+    Roles &amp; Mandates
+  </a>
+</div>
 </section>
 
         {/* CTA */}
