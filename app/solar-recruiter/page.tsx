@@ -1,5 +1,9 @@
 import SiteNav from "@/components/SiteNav";
-
+export const metadata = {
+  title: "Solar Executive Search",
+  description:
+    "Executive search across utility-scale solar, community solar, C&I, EPC, and project delivery platforms. Meridian Stone Search supports targeted hiring across development, engineering, construction, and executive leadership.",
+};
 export default function SolarRecruiterPage() {
   return (
     <>
