@@ -308,7 +308,7 @@ export default function App() {
           </div>
         </section>
 
-        <section className="text-center max-w-3xl mx-auto mt-32 mb-24 px-6">
+        <section className="text-center max-w-3xl mx-auto py-24 px-6">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Discuss a search mandate
           </h2>
