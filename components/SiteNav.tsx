@@ -11,7 +11,7 @@ export default function SiteNav({ onConnect }: SiteNavProps) {
         <a href="/" className="shrink-0">
           <img
             src="/Meridian Stone Search logo.png"
-            alt="Logo"
+            alt="Meridian Stone Search Logo"
             className="h-5 md:h-8 w-auto opacity-90"
           />
         </a>
@@ -72,16 +72,16 @@ export default function SiteNav({ onConnect }: SiteNavProps) {
           onClick={onConnect}
           className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.18em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
         >
-          <span className="md:hidden">Connect</span>
-          <span className="hidden md:inline">Connect</span>
+          <span className="md:hidden">Start</span>
+          <span className="hidden md:inline">Start a Search</span>
         </button>
       ) : (
         <a
-          href="mailto:ian@meridianstonesearch.com?subject=Search%20Inquiry"
+          href="mailto:ian@meridianstonesearch.com?subject=Start%20a%20Search"
           className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.18em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
         >
-          <span className="md:hidden">Connect</span>
-          <span className="hidden md:inline">Connect</span>
+          <span className="md:hidden">Start</span>
+          <span className="hidden md:inline">Start a Search</span>
         </a>
       )}
     </nav>

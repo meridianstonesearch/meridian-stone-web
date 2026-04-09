@@ -67,7 +67,7 @@ export default function App() {
 
       <main>
         {/* HERO */}
-        <section className="relative min-h-screen flex flex-col justify-center items-center px-6 text-center pt-56 pb-32">
+        <section className="relative min-h-screen flex flex-col justify-center items-center px-6 text-center pt-56 pb-24">
           <div className="max-w-7xl flex flex-col items-center">
             <div className="hero-reveal mb-16 md:mb-20">
               <img
@@ -97,7 +97,7 @@ export default function App() {
               platforms nationwide.
             </p>
 
-            <p className="hero-reveal max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80 mb-12">
+            <p className="hero-reveal max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80 mb-10">
               Meridian Stone Search combines the rigor of a national search firm
               with the precision of a boutique partner. We work directly with
               developers, EPCs, and investors to hire proven operators across
@@ -105,6 +105,21 @@ export default function App() {
               leadership — delivering disciplined, performance-aligned search
               execution.
             </p>
+
+            <div className="hero-reveal flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+              <button
+                onClick={() => setIsContactOpen(true)}
+                className="inline-flex bg-[#111111] text-[#F7F6F3] px-8 py-4 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:scale-105 transition-all shadow-lg"
+              >
+                Start a Search
+              </button>
+              <a
+                href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call&body=Hi%20Ian%2C%20I%27d%20like%20to%20schedule%20a%20call%20to%20discuss%20a%20search."
+                className="inline-flex border border-[#111111]/20 px-8 py-4 rounded-full text-xs font-black uppercase tracking-[0.2em] hover:bg-[#111111] hover:text-[#F7F6F3] transition-all"
+              >
+                Schedule a Call
+              </a>
+            </div>
 
             <div className="hero-reveal grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 text-left max-w-4xl mx-auto bg-white/50 p-8 border border-[#111111]/5">
               <div className="flex items-start gap-3">
@@ -131,6 +146,22 @@ export default function App() {
                   Confidential, strategic search mandates
                 </span>
               </div>
+            </div>
+
+            <div className="hero-reveal mt-10 grid grid-cols-1 md:grid-cols-4 gap-3 w-full max-w-5xl">
+              {[
+                "Solar, Storage & EPC Search",
+                "Developers, EPCs & Investors",
+                "Executive & Project-Critical Hiring",
+                "National Reach",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="border border-[#111111]/10 bg-white/40 px-4 py-4 text-[10px] md:text-[11px] font-black uppercase tracking-[0.18em] opacity-80"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -479,18 +510,18 @@ export default function App() {
           </a>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="mailto:ian@meridianstonesearch.com?subject=Search%20Mandate"
+            <button
+              onClick={() => setIsContactOpen(true)}
               className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
             >
-              Email Ian
-            </a>
+              Start a Search
+            </button>
 
             <a
-              href="tel:18456253864"
+              href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call&body=Hi%20Ian%2C%20I%27d%20like%20to%20schedule%20a%20call%20to%20discuss%20a%20search."
               className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all"
             >
-              Call Direct
+              Schedule a Call
             </a>
           </div>
         </section>
@@ -498,12 +529,46 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="py-20 px-6 md:px-12 border-t border-[#111111]/10 bg-[#F7F6F3]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
-          <img
-            src="/Meridian Stone Search logo.png"
-            className="h-8 opacity-80"
-            alt="Logo"
-          />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1.2fr_1fr_1fr] gap-12 items-start text-center md:text-left">
+          <div>
+            <img
+              src="/Meridian Stone Search logo.png"
+              className="h-8 opacity-80 mx-auto md:mx-0"
+              alt="Meridian Stone Search Logo"
+            />
+            <p className="mt-5 text-sm opacity-60 max-w-sm mx-auto md:mx-0 leading-relaxed">
+              Boutique executive search across renewable energy development, solar, storage, finance, and EPC platforms.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-4">
+              Specialties
+            </p>
+            <div className="flex flex-col gap-3 text-sm font-medium opacity-75">
+              <a href="/battery-energy-storage-recruiter" className="hover:opacity-100 transition-all">Battery Storage</a>
+              <a href="/solar-recruiter" className="hover:opacity-100 transition-all">Solar</a>
+              <a href="/development-recruiter" className="hover:opacity-100 transition-all">Development</a>
+              <a href="/renewable-energy-finance-recruiter" className="hover:opacity-100 transition-all">Finance</a>
+              <a href="/epc-construction-recruiter" className="hover:opacity-100 transition-all">EPC &amp; Construction</a>
+            </div>
+          </div>
+
+          <div>
+            <p className="text-[10px] font-black uppercase tracking-[0.3em] opacity-40 mb-4">
+              Contact
+            </p>
+            <div className="flex flex-col gap-3 text-sm font-medium opacity-75">
+              <a href="/roles-and-mandates" className="hover:opacity-100 transition-all">Roles &amp; Mandates</a>
+              <a href="mailto:ian@meridianstonesearch.com" className="hover:opacity-100 transition-all">ian@meridianstonesearch.com</a>
+              <a href="tel:18456253864" className="hover:opacity-100 transition-all">+1 845 625 3864</a>
+              <a href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call" className="hover:opacity-100 transition-all">Schedule a Call</a>
+              <a href="https://www.linkedin.com/in/ian-farber-b73428233/" target="_blank" className="hover:opacity-100 transition-all">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left mt-14 pt-8 border-t border-[#111111]/10">
           <div className="flex gap-8 items-center">
             <a href="tel:18456253864" className="hover:opacity-50 transition-all">
               <Phone size={16} />
@@ -571,9 +636,20 @@ function ContactOverlay({
       </button>
 
       <div className="max-w-xl mx-auto mt-20 space-y-16 text-left">
-        <h2 className="text-5xl font-black uppercase italic font-serif">
-          Protocol
-        </h2>
+        <div className="space-y-4">
+          <h2 className="text-5xl font-black uppercase italic font-serif">
+            Start a Search
+          </h2>
+          <p className="text-base opacity-65 leading-relaxed max-w-lg">
+            Tell us what you are building, who you need, or where the team is under pressure. You can also schedule a call directly.
+          </p>
+          <a
+            href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call&body=Hi%20Ian%2C%20I%27d%20like%20to%20schedule%20a%20call%20to%20discuss%20a%20search."
+            className="inline-flex border border-[#111111]/20 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] hover:bg-[#111111] hover:text-[#F7F6F3] transition-all"
+          >
+            Schedule a Call
+          </a>
+        </div>
 
         <form
           action="https://formspree.io/f/mdawneod"
@@ -608,6 +684,13 @@ function ContactOverlay({
             type="text"
             placeholder="Full Name"
             required
+            className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]"
+          />
+
+          <input
+            name="company"
+            type="text"
+            placeholder="Company / Organization"
             className="w-full bg-transparent border-b border-[#111111]/20 py-4 text-2xl font-bold focus:outline-none focus:border-[#111111]"
           />
 
