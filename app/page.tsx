@@ -12,6 +12,7 @@ import {
   Award,
   Check,
   ChevronDown,
+  Linkedin,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
