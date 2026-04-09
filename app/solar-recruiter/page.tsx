@@ -206,70 +206,22 @@ export default function SolarRecruiterPage() {
           </p>
         </section>
 
-   {/* RELATED SEARCH COVERAGE */}
 <section className="max-w-5xl mx-auto mb-24 text-center">
   <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
-  <a
-    href="/development-recruiter"
-    className="underline opacity-70 hover:opacity-100 transition-all"
-  >
-    Development Search
-  </a>
-
-  <a
-    href="/renewable-energy-finance-recruiter"
-    className="underline opacity-70 hover:opacity-100 transition-all"
-  >
-    Finance Search
-  </a>
-
-  <a
-    href="/battery-energy-storage-recruiter"
-    className="underline opacity-70 hover:opacity-100 transition-all"
-  >
-    Battery Storage Search
-  </a>
-
-  <a
-    href="/epc-construction-recruiter"
-    className="underline opacity-70 hover:opacity-100 transition-all"
-  >
-    EPC &amp; Construction Search
-  </a>
-
-  <a
-    href="/roles-and-mandates"
-    className="underline opacity-70 hover:opacity-100 transition-all"
-  >
-    Roles &amp; Mandates
-  </a>
-</div>
+    <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
+    <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
+    <a href="/battery-energy-storage-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Battery Storage Search</a>
+    <a href="/epc-construction-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">EPC &amp; Construction Search</a>
+    <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
+  </div>
 </section>
 
-        {/* CTA */}
         <section className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-black mb-4">
-            Discuss a solar hiring mandate
-          </h2>
-
-          <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">
-            If you are scaling a utility-scale solar, community solar, or EPC platform, Meridian Stone Search can support targeted hiring across your team.
-          </p>
-
+          <h2 className="text-3xl md:text-4xl font-black mb-4">Discuss a solar hiring mandate</h2>
+          <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">If you are scaling a utility-scale solar, community solar, or EPC platform, Meridian Stone Search can support targeted hiring across your team.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="mailto:ian@meridianstonesearch.com?subject=Solar%20Search%20Mandate"
-              className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
-            >
-              Email Ian
-            </a>
-
-            <a
-              href="tel:18456253864"
-              className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all"
-            >
-              Call Direct
-            </a>
+            <a href="mailto:ian@meridianstonesearch.com?subject=Solar%20Search%20Mandate" className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all">Email Ian</a>
+            <a href="https://meetings.hubspot.com/ian-farber" target="_blank" className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all">Schedule a Call</a>
           </div>
         </section>
       </main>
