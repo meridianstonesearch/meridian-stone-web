@@ -25,6 +25,7 @@ export default function SiteFooter() {
             <a href="/development-recruiter" className="hover:opacity-100 transition-all">Development</a>
             <a href="/renewable-energy-finance-recruiter" className="hover:opacity-100 transition-all">Finance</a>
             <a href="/epc-construction-recruiter" className="hover:opacity-100 transition-all">EPC &amp; Construction</a>
+            <a href="/search-models-process" className="hover:opacity-100 transition-all">Search Models &amp; Process</a>
           </div>
         </div>
 
