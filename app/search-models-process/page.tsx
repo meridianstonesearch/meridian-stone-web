@@ -11,7 +11,6 @@ export default function SearchModelsProcessPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
-        {/* HERO */}
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img
@@ -45,7 +44,6 @@ export default function SearchModelsProcessPage() {
           </p>
         </section>
 
-        {/* WHY STRUCTURE MATTERS */}
         <section className="max-w-5xl mx-auto mb-32">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
@@ -74,7 +72,6 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        {/* MODELS */}
         <section className="py-24 px-8 md:px-12 bg-[#111111] text-[#F7F6F3] mb-32">
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center gap-3 mb-8 opacity-40">
@@ -121,7 +118,6 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        {/* HOW PROCESS RUNS */}
         <section className="max-w-6xl mx-auto mb-32">
           <div className="text-center mb-14">
             <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
@@ -174,7 +170,6 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        {/* WHY CLIENTS USE MERIDIAN */}
         <section className="max-w-4xl mx-auto mb-32 text-center">
           <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
             <div className="h-px w-10 bg-[#111111]" />
@@ -197,7 +192,6 @@ export default function SearchModelsProcessPage() {
           </p>
         </section>
 
-        {/* RELATED LINKS */}
         <section className="max-w-5xl mx-auto mb-24 text-center">
           <div className="flex items-center justify-center gap-3 mb-5 opacity-40">
             <div className="h-px w-10 bg-[#111111]" />
@@ -216,7 +210,6 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Discuss the right search structure
@@ -235,7 +228,8 @@ export default function SearchModelsProcessPage() {
             </a>
 
             <a
-              href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call&body=Hi%20Ian%2C%20I%27d%20like%20to%20schedule%20a%20call%20to%20discuss%20the%20right%20search%20model."
+              href="https://meetings.hubspot.com/ian-farber"
+              target="_blank"
               className="inline-flex border border-black/30 px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all"
             >
               Schedule a Call

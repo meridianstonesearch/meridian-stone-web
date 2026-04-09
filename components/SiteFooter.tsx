@@ -37,7 +37,7 @@ export default function SiteFooter() {
           <div className="flex flex-col gap-3 text-sm font-medium opacity-75">
             <a href="mailto:ian@meridianstonesearch.com" className="hover:opacity-100 transition-all">ian@meridianstonesearch.com</a>
             <a href="tel:18456253864" className="hover:opacity-100 transition-all">+1 845 625 3864</a>
-            <a href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call" className="hover:opacity-100 transition-all">Schedule a Call</a>
+            <a href="https://meetings.hubspot.com/ian-farber" target="_blank" className="hover:opacity-100 transition-all">Schedule a Call</a>
             <a href="https://www.linkedin.com/in/ian-farber-b73428233/" target="_blank" className="hover:opacity-100 transition-all">LinkedIn</a>
           </div>
         </div>
