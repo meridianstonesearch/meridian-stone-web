@@ -64,7 +64,7 @@ export default function RolesAndMandates() {
             <li>Storage Engineering</li>
             <li>Hybrid Project Leadership</li>
             <li>EPC Leadership, Storage</li>
-            <li>Commissioning & O&M</li>
+            <li>Commissioning & O&amp;M</li>
           </ul>
         </div>
 
@@ -85,7 +85,7 @@ export default function RolesAndMandates() {
           <h3 className="font-black mb-4">Finance & Commercial</h3>
           <ul className="space-y-2 text-sm opacity-70">
             <li>Project Finance</li>
-            <li>FP&A Leadership</li>
+            <li>FP&amp;A Leadership</li>
             <li>Capital Markets</li>
             <li>Investment Roles</li>
             <li>Commercial Strategy</li>
@@ -120,6 +120,25 @@ export default function RolesAndMandates() {
           <div>Platform expansion</div>
           <div>Retained / strategic searches</div>
         </div>
+      </section>
+
+      {/* PROCESS LINK */}
+      <section className="max-w-4xl mx-auto mb-24 text-center border border-black/10 bg-white/50 px-8 py-12">
+        <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">
+          Search Models &amp; Process
+        </p>
+        <h2 className="text-2xl md:text-3xl font-black mb-4">
+          Not every mandate should be structured the same way.
+        </h2>
+        <p className="opacity-70 mb-8 text-lg leading-relaxed">
+          Explore Meridian Stone Search’s contingent, retained, and multi-role engagement models — plus the process behind how we run critical searches in tight renewable energy markets.
+        </p>
+        <a
+          href="/search-models-process"
+          className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+        >
+          View Search Models &amp; Process
+        </a>
       </section>
 
       {/* CTA */}

@@ -38,6 +38,45 @@ export const metadata: Metadata = {
   },
 };
 
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Meridian Stone Search",
+  url: "https://meridianstonesearch.com",
+  image: "https://meridianstonesearch.com/Meridian%20Stone%20Search%20logo.png",
+  description:
+    "Boutique executive search for renewable energy, battery storage, solar, EPC, finance, and infrastructure platforms.",
+  areaServed: "United States",
+  knowsAbout: [
+    "Renewable Energy Executive Search",
+    "Battery Energy Storage Recruiting",
+    "Solar Recruiting",
+    "Development Recruiting",
+    "Renewable Energy Finance Recruiting",
+    "EPC and Construction Recruiting",
+  ],
+  sameAs: ["https://www.linkedin.com/in/ian-farber-b73428233/"],
+  founder: {
+    "@type": "Person",
+    name: "Ian Farber",
+    jobTitle: "Founder",
+    sameAs: ["https://www.linkedin.com/in/ian-farber-b73428233/"],
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Ian Farber",
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Meridian Stone Search",
+    url: "https://meridianstonesearch.com",
+  },
+  sameAs: ["https://www.linkedin.com/in/ian-farber-b73428233/"],
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -49,6 +88,20 @@ export default function RootLayout({
         {children}
         <SiteFooter />
         <Analytics />
+        <Script
+          id="schema-professional-service"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(professionalServiceSchema),
+          }}
+        />
+        <Script
+          id="schema-person"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <Script
           id="vtag-ai-js"
           strategy="afterInteractive"
