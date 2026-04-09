@@ -20,6 +20,7 @@ export default function SiteFooter() {
             Specialties
           </p>
           <div className="flex flex-col gap-3 text-sm font-medium opacity-75">
+            <a href="/roles-and-mandates" className="hover:opacity-100 transition-all">Roles &amp; Mandates</a>
             <a href="/battery-energy-storage-recruiter" className="hover:opacity-100 transition-all">Battery Storage</a>
             <a href="/solar-recruiter" className="hover:opacity-100 transition-all">Solar</a>
             <a href="/development-recruiter" className="hover:opacity-100 transition-all">Development</a>
@@ -34,7 +35,6 @@ export default function SiteFooter() {
             Contact
           </p>
           <div className="flex flex-col gap-3 text-sm font-medium opacity-75">
-            <a href="/roles-and-mandates" className="hover:opacity-100 transition-all">Roles &amp; Mandates</a>
             <a href="mailto:ian@meridianstonesearch.com" className="hover:opacity-100 transition-all">ian@meridianstonesearch.com</a>
             <a href="tel:18456253864" className="hover:opacity-100 transition-all">+1 845 625 3864</a>
             <a href="mailto:ian@meridianstonesearch.com?subject=Schedule%20a%20Call" className="hover:opacity-100 transition-all">Schedule a Call</a>

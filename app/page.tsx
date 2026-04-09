@@ -164,6 +164,25 @@ export default function App() {
           </div>
         </section>
 
+        {/* PROCESS CTA */}
+        <section className="max-w-5xl mx-auto mb-24 text-center border border-black/10 bg-white/50 px-8 py-12">
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">
+            Search Models &amp; Process
+          </p>
+          <h2 className="text-2xl md:text-3xl font-black mb-4">
+            The way a search is structured changes the quality of access, speed, and execution.
+          </h2>
+          <p className="opacity-70 mb-8 text-lg leading-relaxed max-w-3xl mx-auto">
+            Explore Meridian Stone Search’s contingent, retained, and multi-role models — plus the process behind how we run critical mandates in tight renewable energy markets.
+          </p>
+          <a
+            href="/search-models-process"
+            className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+          >
+            View Search Models &amp; Process
+          </a>
+        </section>
+
         {/* PROBLEM SECTION */}
         <section className="py-32 px-6 md:px-12 bg-white border-t border-[#111111]/10">
           <div className="max-w-5xl mx-auto text-center space-y-12">
