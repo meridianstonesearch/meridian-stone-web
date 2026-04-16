@@ -4,6 +4,15 @@ export const metadata = {
   title: "Renewable Energy Finance Executive Search",
   description:
     "Executive search across renewable energy finance, project finance, capital markets, structured finance, FP&A, valuation, and executive leadership. Meridian Stone Search supports targeted hiring across solar, storage, and infrastructure finance platforms.",
+  alternates: {
+    canonical: "/renewable-energy-finance-recruiter",
+  },
+  openGraph: {
+    title: "Renewable Energy Finance Executive Search | Meridian Stone Search",
+    description:
+      "Executive search across renewable energy finance, project finance, capital markets, structured finance, FP&A, valuation, and executive leadership.",
+    url: "https://meridianstonesearch.com/renewable-energy-finance-recruiter",
+  },
 };
 
 export default function RenewableEnergyFinanceRecruiterPage() {

@@ -4,6 +4,15 @@ export const metadata = {
   title: "EPC & Construction Executive Search",
   description:
     "Executive search across renewable energy EPC, construction, commissioning, and O&M platforms. Meridian Stone Search supports targeted hiring across project delivery, field leadership, and contract deployment.",
+  alternates: {
+    canonical: "/epc-construction-recruiter",
+  },
+  openGraph: {
+    title: "EPC & Construction Executive Search | Meridian Stone Search",
+    description:
+      "Executive search across renewable energy EPC, construction, commissioning, and O&M platforms.",
+    url: "https://meridianstonesearch.com/epc-construction-recruiter",
+  },
 };
 
 export default function EPCConstructionRecruiterPage() {

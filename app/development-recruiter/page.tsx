@@ -4,6 +4,15 @@ export const metadata = {
   title: "Development Executive Search",
   description:
     "Executive search across renewable energy development, interconnection, permitting, siting, and origination platforms. Meridian Stone Search supports targeted hiring across solar, storage, and grid-scale project development.",
+  alternates: {
+    canonical: "/development-recruiter",
+  },
+  openGraph: {
+    title: "Development Executive Search | Meridian Stone Search",
+    description:
+      "Executive search across renewable energy development, interconnection, permitting, siting, and origination platforms.",
+    url: "https://meridianstonesearch.com/development-recruiter",
+  },
 };
 
 export default function DevelopmentRecruiterPage() {

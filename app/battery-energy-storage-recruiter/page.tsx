@@ -1,9 +1,18 @@
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
-  title: "Battery Energy Storage Executive Search | Meridian Stone Search",
+  title: "BESS Executive Search",
   description:
     "Executive search across utility-scale battery storage, solar plus storage, and grid infrastructure platforms. Meridian Stone Search supports targeted hiring across development, interconnection, engineering, EPC, construction, and leadership.",
+  alternates: {
+    canonical: "/battery-energy-storage-recruiter",
+  },
+  openGraph: {
+    title: "BESS Executive Search | Meridian Stone Search",
+    description:
+      "Executive search across utility-scale battery storage, solar plus storage, and grid infrastructure platforms.",
+    url: "https://meridianstonesearch.com/battery-energy-storage-recruiter",
+  },
 };
 export default function BatteryEnergyStorageRecruiter() {
   return (

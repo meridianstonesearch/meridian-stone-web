@@ -3,6 +3,15 @@ export const metadata = {
   title: "Solar Executive Search",
   description:
     "Executive search across utility-scale solar, community solar, C&I, EPC, and project delivery platforms. Meridian Stone Search supports targeted hiring across development, engineering, construction, and executive leadership.",
+  alternates: {
+    canonical: "/solar-recruiter",
+  },
+  openGraph: {
+    title: "Solar Executive Search | Meridian Stone Search",
+    description:
+      "Executive search across utility-scale solar, community solar, C&I, EPC, and project delivery platforms.",
+    url: "https://meridianstonesearch.com/solar-recruiter",
+  },
 };
 export default function SolarRecruiterPage() {
   return (

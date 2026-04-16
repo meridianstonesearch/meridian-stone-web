@@ -4,6 +4,15 @@ export const metadata = {
   title: "Search Models & Process",
   description:
     "Explore Meridian Stone Search's contingent, retained, and multi-role search models, plus the process behind targeted renewable energy executive search.",
+  alternates: {
+    canonical: "/search-models-process",
+  },
+  openGraph: {
+    title: "Search Models & Process | Meridian Stone Search",
+    description:
+      "Explore Meridian Stone Search's contingent, retained, and multi-role search models, plus the process behind targeted renewable energy executive search.",
+    url: "https://meridianstonesearch.com/search-models-process",
+  },
 };
 
 export default function SearchModelsProcessPage() {
