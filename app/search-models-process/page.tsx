@@ -49,7 +49,7 @@ export default function SearchModelsProcessPage() {
           </p>
 
           <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
-            Meridian Stone Search works with developers, EPCs, investors, and growth platforms across renewable energy. Each engagement is structured around the actual requirements of the mandate â whether the role is fast-moving, confidential, or central to the next phase of platform growth.
+            Meridian Stone Search works with developers, EPCs, investors, and growth platforms across renewable energy. Each engagement is structured around the actual requirements of the mandate — whether the role is fast-moving, confidential, or central to the next phase of platform growth.
           </p>
         </section>
 
@@ -85,7 +85,7 @@ export default function SearchModelsProcessPage() {
         <div className="border border-[#111111]/10 px-8 py-10">
           <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Focus</p>
           <h3 className="text-lg font-black uppercase tracking-tight mb-3">Renewable Energy Only</h3>
-          <p className="opacity-70 text-sm leading-relaxed">We don't split attention across unrelated sectors. Every client, every search, every market map is within renewable energy infrastructure.</p>
+          <p className="opacity-70 text-sm leading-relaxed">We don&apos;t split attention across unrelated sectors. Every client, every search, every market map is within renewable energy infrastructure.</p>
         </div>
         <div className="border border-[#111111]/10 px-8 py-10">
           <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Access</p>
@@ -137,7 +137,7 @@ export default function SearchModelsProcessPage() {
                 <p className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-4">Model Three</p>
                 <h3 className="text-2xl font-black tracking-tight mb-5">Multi-Role Retainer</h3>
                 <p className="opacity-80 leading-relaxed mb-5">
-                  Best for platforms scaling across several openings over a defined window Ã¢ÂÂ from PMs and engineers to leadership buildouts.
+                  Best for platforms scaling across several openings over a defined window — from PMs and engineers to leadership buildouts.
                 </p>
                 <p className="opacity-65 leading-relaxed text-sm">
                   This model creates continuity across the hiring roadmap: one process, one market voice, one quality bar, and no reset between searches.
@@ -170,11 +170,11 @@ export default function SearchModelsProcessPage() {
               },
               {
                 title: "Target Mapping",
-                body: "We build a focused market map around comparable platforms, adjacent talent pools, and specific competitor sets Ã¢ÂÂ especially where passive candidates are most likely to sit.",
+                body: "We build a focused market map around comparable platforms, adjacent talent pools, and specific competitor sets — especially where passive candidates are most likely to sit.",
               },
               {
                 title: "Direct Outreach & Qualification",
-                body: "We engage the market with one consistent voice, qualifying not just rÃÂ©sumÃÂ© fit, but motivation, timing, technical depth, leadership judgment, and platform alignment.",
+                body: "We engage the market with one consistent voice, qualifying not just résumé fit, but motivation, timing, technical depth, leadership judgment, and platform alignment.",
               },
               {
                 title: "Shortlist Delivery",
@@ -182,7 +182,7 @@ export default function SearchModelsProcessPage() {
               },
               {
                 title: "Interview & Close Support",
-                body: "We stay tight to the process through interview coordination, feedback, reference support, offer shaping, and candidate management Ã¢ÂÂ especially where momentum and confidentiality matter.",
+                body: "We stay tight to the process through interview coordination, feedback, reference support, offer shaping, and candidate management — especially where momentum and confidentiality matter.",
               },
               {
                 title: "Post-Placement Follow-Through",
@@ -226,7 +226,7 @@ export default function SearchModelsProcessPage() {
           </h2>
 
           <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">
-            Whether you need a single critical hire, a confidential replacement, or a multi-role buildout â Meridian Stone Search will structure the engagement to match what's actually at stake.
+            Whether you need a single critical hire, a confidential replacement, or a multi-role buildout — Meridian Stone Search will structure the engagement to match what's actually at stake.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
