@@ -109,6 +109,19 @@ export default function RootLayout({
           data-pid="1cMdga9t1VWMy3tqM"
           data-version="062024"
         />
+
+      <Script
+        id="linkedin-insight"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `_linkedin_partner_id = "7866756"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
+        }}
+      />
+      <Script
+        id="linkedin-insight-src"
+        strategy="afterInteractive"
+        src="https://snap.licdn.com/li.lms-analytics/insight.min.js"
+      />
       </body>
     </html>
   );
