@@ -19,8 +19,8 @@ export default function SearchModelsProcessPage() {
   return (
     <>
       <SiteNav />
-      <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
-        <section className="max-w-6xl mx-auto text-center mb-32">
+      <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-28 pb-16">
+        <section className="max-w-6xl mx-auto text-center mb-16">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img
               src="/Meridian Stone Search logo.png"
@@ -49,11 +49,11 @@ export default function SearchModelsProcessPage() {
           </p>
 
           <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
-            Meridian Stone Search partners with developers, EPCs, investors, and growth platforms across renewable energy infrastructure. We structure engagements around the realities of the market — whether a role is broad and flexible, highly confidential, or critical to the next phase of a platform’s growth.
+            Meridian Stone Search works with developers, EPCs, investors, and growth platforms across renewable energy. Each engagement is structured around the actual requirements of the mandate — whether the role is fast-moving, confidential, or central to the next phase of platform growth.
           </p>
         </section>
 
-        <section className="max-w-5xl mx-auto mb-32">
+        <section className="max-w-5xl mx-auto mb-16">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
               <div className="h-px w-10 bg-[#111111]" />
@@ -76,12 +76,32 @@ export default function SearchModelsProcessPage() {
               In those markets, multiple recruiters calling the same shortlist creates noise. Employer messaging becomes fragmented. Timelines stretch. Candidate confidence drops.
             </p>
             <p>
-              That is why Meridian Stone Search aligns engagement structure to role criticality, confidentiality, and market tightness — so the process matches the stakes.
+              Meridian Stone Search aligns engagement structure to role criticality, confidentiality, and market tightness. The process should match the stakes.
             </p>
           </div>
         </section>
+      {/* Differentiators strip */}
+      <section className="max-w-5xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div className="border border-[#111111]/10 px-8 py-10">
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Focus</p>
+          <h3 className="text-lg font-black uppercase tracking-tight mb-3">Renewable Energy Only</h3>
+          <p className="opacity-70 text-sm leading-relaxed">We don't split attention across unrelated sectors. Every client, every search, every market map is within renewable energy infrastructure.</p>
+        </div>
+        <div className="border border-[#111111]/10 px-8 py-10">
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Access</p>
+          <h3 className="text-lg font-black uppercase tracking-tight mb-3">Senior-Level Direct Outreach</h3>
+          <p className="opacity-70 text-sm leading-relaxed">No junior sourcers, no bulk outreach. Every candidate is contacted directly and qualified at the senior level before any presentation.</p>
+        </div>
+        <div className="border border-[#111111]/10 px-8 py-10">
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Accountability</p>
+          <h3 className="text-lg font-black uppercase tracking-tight mb-3">One Point of Contact</h3>
+          <p className="opacity-70 text-sm leading-relaxed">One consistent voice into every market. The same person who designs the search executes it and delivers the shortlist.</p>
+        </div>
+      </section>
 
-        <section className="py-24 px-8 md:px-12 bg-[#111111] text-[#F7F6F3] mb-32">
+
+
+        <section className="py-16 px-8 md:px-12 bg-[#111111] text-[#F7F6F3] mb-16">
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center gap-3 mb-8 opacity-40">
               <div className="h-px w-10 bg-white" />
@@ -117,7 +137,7 @@ export default function SearchModelsProcessPage() {
                 <p className="text-[10px] uppercase tracking-[0.3em] opacity-50 mb-4">Model Three</p>
                 <h3 className="text-2xl font-black tracking-tight mb-5">Multi-Role Retainer</h3>
                 <p className="opacity-80 leading-relaxed mb-5">
-                  Best for platforms scaling across several openings over a defined window — from PMs and engineers to leadership buildouts.
+                  Best for platforms scaling across several openings over a defined window â from PMs and engineers to leadership buildouts.
                 </p>
                 <p className="opacity-65 leading-relaxed text-sm">
                   This model creates continuity across the hiring roadmap: one process, one market voice, one quality bar, and no reset between searches.
@@ -127,7 +147,7 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        <section className="max-w-6xl mx-auto mb-32">
+        <section className="max-w-6xl mx-auto mb-16">
           <div className="text-center mb-14">
             <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
               <div className="h-px w-10 bg-[#111111]" />
@@ -138,7 +158,7 @@ export default function SearchModelsProcessPage() {
             </div>
 
             <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
-              The process behind every mandate.
+              How every search runs.
             </h2>
           </div>
 
@@ -150,11 +170,11 @@ export default function SearchModelsProcessPage() {
               },
               {
                 title: "Target Mapping",
-                body: "We build a focused market map around comparable platforms, adjacent talent pools, and specific competitor sets — especially where passive candidates are most likely to sit.",
+                body: "We build a focused market map around comparable platforms, adjacent talent pools, and specific competitor sets â especially where passive candidates are most likely to sit.",
               },
               {
                 title: "Direct Outreach & Qualification",
-                body: "We engage the market with one consistent voice, qualifying not just résumé fit, but motivation, timing, technical depth, leadership judgment, and platform alignment.",
+                body: "We engage the market with one consistent voice, qualifying not just rÃ©sumÃ© fit, but motivation, timing, technical depth, leadership judgment, and platform alignment.",
               },
               {
                 title: "Shortlist Delivery",
@@ -162,7 +182,7 @@ export default function SearchModelsProcessPage() {
               },
               {
                 title: "Interview & Close Support",
-                body: "We stay tight to the process through interview coordination, feedback, reference support, offer shaping, and candidate management — especially where momentum and confidentiality matter.",
+                body: "We stay tight to the process through interview coordination, feedback, reference support, offer shaping, and candidate management â especially where momentum and confidentiality matter.",
               },
               {
                 title: "Post-Placement Follow-Through",
@@ -179,7 +199,7 @@ export default function SearchModelsProcessPage() {
           </div>
         </section>
 
-        <section className="max-w-4xl mx-auto mb-32 text-center">
+        <section className="max-w-4xl mx-auto mb-16 text-center">
           <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
             <div className="h-px w-10 bg-[#111111]" />
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
@@ -221,11 +241,11 @@ export default function SearchModelsProcessPage() {
 
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
-            Discuss the right search structure
+            Ready to structure your search?
           </h2>
 
           <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">
-            Whether the need is contingent, retained, or part of a broader hiring roadmap, Meridian Stone Search can help structure the engagement around the stakes of the role and the realities of the market.
+            Whether you need a single critical hire, a confidential replacement, or a multi-role buildout — Meridian Stone Search will structure the engagement to match what's actually at stake.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
