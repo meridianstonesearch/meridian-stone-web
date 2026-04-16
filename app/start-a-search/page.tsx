@@ -5,6 +5,15 @@ export const metadata = {
   title: "Start a Search",
   description:
     "Start a search with Meridian Stone Search. Submit your hiring needs, team buildout plans, or market inquiry through our direct intake form.",
+  alternates: {
+    canonical: "/start-a-search",
+  },
+  openGraph: {
+    title: "Start a Search | Meridian Stone Search",
+    description:
+      "Submit your hiring needs, team buildout plans, or market inquiry through our direct intake form.",
+    url: "https://meridianstonesearch.com/start-a-search",
+  },
 };
 
 export default function StartASearchPage() {

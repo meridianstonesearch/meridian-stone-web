@@ -3,6 +3,15 @@ export const metadata = {
   title: "Roles & Mandates",
   description:
     "Explore Meridian Stone Search coverage across renewable energy hiring mandates, including development, interconnection, EPC, battery storage, finance, construction, and executive leadership.",
+  alternates: {
+    canonical: "/roles-and-mandates",
+  },
+  openGraph: {
+    title: "Roles & Mandates | Meridian Stone Search",
+    description:
+      "Explore Meridian Stone Search coverage across renewable energy hiring mandates.",
+    url: "https://meridianstonesearch.com/roles-and-mandates",
+  },
 };
 export default function RolesAndMandates() {
  return (
@@ -20,7 +29,7 @@ export default function RolesAndMandates() {
         <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Development & Interconnection</h3><ul className="space-y-2 text-sm opacity-70"><li>Development Engineer</li><li>Development Manager</li><li>Interconnection Manager</li><li>Transmission / Grid Strategy</li><li>Head of Development</li></ul></div>
         <div className="border border-black/10 p-8"><h3 className="font-black mb-4">EPC & Construction</h3><ul className="space-y-2 text-sm opacity-70"><li>VP of EPC</li><li>Director of Construction</li><li>Project Executive</li><li>Project Manager</li><li>Field Operations Leadership</li><li>Estimating / Preconstruction</li></ul></div>
         <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Energy Storage (BESS)</h3><ul className="space-y-2 text-sm opacity-70"><li>BESS Development</li><li>Storage Engineering</li><li>Hybrid Project Leadership</li><li>EPC Leadership, Storage</li><li>Commissioning &amp; O&amp;M</li></ul></div>
-        <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Engineering & Technical</h3><ul className="space-y-2 text-sm opacity-70"><li>Electrical Engineer</li><li>Power Systems Engineer</li><li>PVSyst / Design Engineer</li><li>Owner’s Engineer</li><li>Grid Integration</li></ul></div>
+        <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Engineering & Technical</h3><ul className="space-y-2 text-sm opacity-70"><li>Electrical Engineer</li><li>Power Systems Engineer</li><li>PVSyst / Design Engineer</li><li>Ownerâs Engineer</li><li>Grid Integration</li></ul></div>
         <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Finance & Commercial</h3><ul className="space-y-2 text-sm opacity-70"><li>Project Finance</li><li>FP&amp;A Leadership</li><li>Capital Markets</li><li>Investment Roles</li><li>Commercial Strategy</li></ul></div>
         <div className="border border-black/10 p-8"><h3 className="font-black mb-4">Executive & Platform Buildouts</h3><ul className="space-y-2 text-sm opacity-70"><li>CEO / COO</li><li>VP / SVP Leadership</li><li>Platform Buildouts</li><li>Strategic Expansion Hires</li><li>Leadership Upgrades</li></ul></div>
       </section>
@@ -33,7 +42,7 @@ export default function RolesAndMandates() {
       <section className="max-w-4xl mx-auto mb-24 text-center border border-black/10 bg-white/50 px-8 py-12">
         <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Search Models &amp; Process</p>
         <h2 className="text-2xl md:text-3xl font-black mb-4">Not every mandate should be structured the same way.</h2>
-        <p className="opacity-70 mb-8 text-lg leading-relaxed">Explore Meridian Stone Search’s contingent, retained, and multi-role engagement models — plus the process behind how we run critical searches in tight renewable energy markets.</p>
+        <p className="opacity-70 mb-8 text-lg leading-relaxed">Explore Meridian Stone Searchâs contingent, retained, and multi-role engagement models â plus the process behind how we run critical searches in tight renewable energy markets.</p>
         <a href="/search-models-process" className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all">View Search Models &amp; Process</a>
       </section>
 
