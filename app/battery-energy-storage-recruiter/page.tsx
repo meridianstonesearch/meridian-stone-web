@@ -53,7 +53,7 @@ export default function BatteryEnergyStorageRecruiter() {
           </p>
 
           <p className="max-w-3xl mx-auto text-sm md:text-base leading-relaxed opacity-60 mt-6">
-            We support targeted search across development, interconnection, engineering, EPC execution, construction, and executive leadership â focusing on professionals who have delivered real projects in technically constrained markets.
+            We support targeted search across development, interconnection, engineering, EPC execution, construction, and executive leadership - focusing on professionals who have delivered real projects in technically constrained markets.
           </p>
         </section>
 
@@ -75,7 +75,7 @@ export default function BatteryEnergyStorageRecruiter() {
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium text-center">
             <p>
-              Utility-scale battery storage is scaling rapidly, but the talent market has not expanded at the same pace. The people who understand interconnection, grid integration, storage EPC execution, and project delivery are limited â and are usually already deployed inside active platforms.
+              Utility-scale battery storage is scaling rapidly, but the talent market has not expanded at the same pace. The people who understand interconnection, grid integration, storage EPC execution, and project delivery are limited - and are usually already deployed inside active platforms.
             </p>
 
             <p>
@@ -159,7 +159,7 @@ export default function BatteryEnergyStorageRecruiter() {
                 <li>Power Systems Engineers</li>
                 <li>BMS / Controls Engineers</li>
                 <li>Grid Integration Specialists</li>
-                <li>Ownerâs Engineering / Technical Leadership</li>
+                <li>Owner's Engineering / Technical Leadership</li>
               </ul>
             </div>
 
@@ -212,7 +212,7 @@ export default function BatteryEnergyStorageRecruiter() {
           </p>
 
           <p className="opacity-80 text-lg md:text-xl leading-relaxed font-medium">
-            Meridian Stone Search approaches this market accordingly â through targeted search, role calibration, direct engagement, and a disciplined process built for critical hires rather than applicant flow.
+            Meridian Stone Search approaches this market accordingly: through targeted search, role calibration, direct engagement, and a disciplined process built for critical hires rather than applicant flow.
           </p>
         </section>
 
