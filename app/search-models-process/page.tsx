@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -20,6 +21,8 @@ export default function SearchModelsProcessPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-28 pb-16">
+        <InteriorPassThrough />
+
         <section className="max-w-6xl mx-auto text-center mb-16">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img
@@ -37,18 +40,18 @@ export default function SearchModelsProcessPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.92] mb-8 max-w-5xl mx-auto">
             Search structures built for <br />
             <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">
               critical hires, tight markets, and real execution.
             </span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">
+          <p className="max-w-3xl mx-auto text-xl md:text-[1.7rem] font-serif italic mb-10 opacity-85">
             Contingent, retained, and multi-role search models designed around hiring urgency, talent scarcity, and long-term growth.
           </p>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">
             Meridian Stone Search works with developers, EPCs, investors, and growth platforms across renewable energy. Each engagement is structured around the actual requirements of the mandate — whether the role is fast-moving, confidential, or central to the next phase of platform growth.
           </p>
         </section>
@@ -63,7 +66,7 @@ export default function SearchModelsProcessPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
               The way a search is structured changes the quality of access, the speed of execution, and the signal your company sends into the market.
             </h2>
           </div>
@@ -80,26 +83,24 @@ export default function SearchModelsProcessPage() {
             </p>
           </div>
         </section>
-      {/* Differentiators strip */}
-      <section className="max-w-5xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-        <div className="border border-[#111111]/10 px-8 py-10">
-          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Focus</p>
-          <h3 className="text-lg font-black uppercase tracking-tight mb-3">Renewable Energy Only</h3>
-          <p className="opacity-70 text-sm leading-relaxed">We don&apos;t split attention across unrelated sectors. Every client, every search, every market map is within renewable energy infrastructure.</p>
-        </div>
-        <div className="border border-[#111111]/10 px-8 py-10">
-          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Access</p>
-          <h3 className="text-lg font-black uppercase tracking-tight mb-3">Senior-Level Direct Outreach</h3>
-          <p className="opacity-70 text-sm leading-relaxed">No junior sourcers, no bulk outreach. Every candidate is contacted directly and qualified at the senior level before any presentation.</p>
-        </div>
-        <div className="border border-[#111111]/10 px-8 py-10">
-          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Accountability</p>
-          <h3 className="text-lg font-black uppercase tracking-tight mb-3">One Point of Contact</h3>
-          <p className="opacity-70 text-sm leading-relaxed">One consistent voice into every market. The same person who designs the search executes it and delivers the shortlist.</p>
-        </div>
-      </section>
 
-
+        <section className="max-w-5xl mx-auto mb-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="border border-[#111111]/10 px-8 py-10">
+            <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Focus</p>
+            <h3 className="text-lg font-black uppercase tracking-tight mb-3">Renewable Energy Only</h3>
+            <p className="opacity-70 text-sm leading-relaxed">We don&apos;t split attention across unrelated sectors. Every client, every search, every market map is within renewable energy infrastructure.</p>
+          </div>
+          <div className="border border-[#111111]/10 px-8 py-10">
+            <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Access</p>
+            <h3 className="text-lg font-black uppercase tracking-tight mb-3">Senior-Level Direct Outreach</h3>
+            <p className="opacity-70 text-sm leading-relaxed">No junior sourcers, no bulk outreach. Every candidate is contacted directly and qualified at the senior level before any presentation.</p>
+          </div>
+          <div className="border border-[#111111]/10 px-8 py-10">
+            <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">Accountability</p>
+            <h3 className="text-lg font-black uppercase tracking-tight mb-3">One Point of Contact</h3>
+            <p className="opacity-70 text-sm leading-relaxed">One consistent voice into every market. The same person who designs the search executes it and delivers the shortlist.</p>
+          </div>
+        </section>
 
         <section className="py-16 px-8 md:px-12 bg-[#111111] text-[#F7F6F3] mb-16">
           <div className="max-w-6xl mx-auto">
@@ -157,7 +158,7 @@ export default function SearchModelsProcessPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
               How every search runs.
             </h2>
           </div>
@@ -208,7 +209,7 @@ export default function SearchModelsProcessPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight mb-8">
             One consistent market voice. One accountable process. One search partner close enough to understand what actually matters.
           </h2>
 
@@ -220,13 +221,14 @@ export default function SearchModelsProcessPage() {
             That includes confidential replacements, executive buildouts, team scaling mandates, and project-critical hires across renewable energy development, solar, storage, finance, and EPC execution.
           </p>
         </section>
-<section className="text-center max-w-3xl mx-auto">
+
+        <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Ready to structure your search?
           </h2>
 
           <p className="opacity-70 mb-8 text-lg leading-relaxed font-medium">
-            Whether you need a single critical hire, a confidential replacement, or a multi-role buildout — Meridian Stone Search will structure the engagement to match what's actually at stake.
+            Whether you need a single critical hire, a confidential replacement, or a multi-role buildout — Meridian Stone Search will structure the engagement to match what&apos;s actually at stake.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
