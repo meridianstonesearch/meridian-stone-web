@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-cormorant);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +20,25 @@
   }
 }
 
+html {
+  background: var(--background);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.serif-display {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.serif-heading {
+  font-family: var(--font-serif);
+}
+
+.mono-label {
+  font-family: var(--font-mono);
 }
