@@ -36,23 +36,31 @@ export default function SolarRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
-            The right hires in solar <br />
-            <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">
-              are already building projects.
-            </span>
+          <h1 className="text-5xl md:text-[7.5rem] font-black uppercase tracking-[-0.06em] leading-[0.88] mb-4 max-w-5xl mx-auto text-balance">
+            The Right Hires in Solar
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">
-            Executive search across utility-scale solar, community solar, C&amp;I, EPC, and project delivery platforms.
+          <p className="max-w-5xl mx-auto font-serif italic font-medium text-[clamp(3rem,7vw,6rem)] leading-[0.92] tracking-[-0.02em] text-[#111111]/60 mb-8 text-balance">
+            are already building projects.
+          </p>
+
+          <p className="max-w-3xl mx-auto text-lg md:text-2xl font-serif font-medium mb-10 opacity-85 leading-[1.15] text-balance">
+            Executive search across utility-scale solar, community solar, C&amp;I,
+            EPC, and project delivery platforms.
           </p>
 
           <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
-            Meridian Stone Search partners with developers, EPCs, investors, and growth platforms to build high-impact teams across solar development, engineering, construction, and executive leadership.
+            Meridian Stone Search partners with developers, EPCs, investors,
+            and growth platforms to build high-impact teams across solar
+            development, engineering, construction, and executive leadership.
           </p>
 
           <p className="max-w-3xl mx-auto text-sm md:text-base leading-relaxed opacity-60 mt-6">
-            We support targeted search across origination, permitting, interconnection, engineering, EPC execution, construction, commercial strategy, and platform leadership — focusing on professionals who have delivered real projects in competitive markets.
+            We support targeted search across origination, permitting,
+            interconnection, engineering, EPC execution, construction,
+            commercial strategy, and platform leadership — focusing on
+            professionals who have delivered real projects in competitive
+            markets.
           </p>
         </section>
 
@@ -67,18 +75,24 @@ export default function SolarRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight max-w-4xl mx-auto text-balance">
               Solar hiring is no longer just a volume issue. It is an execution issue.
             </h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium text-center">
             <p>
-              Utility-scale solar continues to account for a dominant share of new U.S. power capacity, but project delivery is increasingly shaped by permitting pressure, module availability, labor tightness, interconnection complexity, and commercial discipline.
+              Utility-scale solar continues to account for a dominant share of
+              new U.S. power capacity, but project delivery is increasingly
+              shaped by permitting pressure, module availability, labor
+              tightness, interconnection complexity, and commercial discipline.
             </p>
 
             <p>
-              That means the strongest hires are not simply experienced solar candidates. They are the operators who know how to move projects from development through EPC execution, navigate real-world constraints, and build teams that can scale without losing rigor.
+              That means the strongest hires are not simply experienced solar
+              candidates. They are the operators who know how to move projects
+              from development through EPC execution, navigate real-world
+              constraints, and build teams that can scale without losing rigor.
             </p>
           </div>
         </section>
@@ -94,7 +108,7 @@ export default function SolarRecruiterPage() {
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+              <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-balance">
                 Solar platforms do not slow down because they lack interest.
                 <br />
                 <span className="opacity-70">They slow down because leadership, technical judgment, and execution talent are harder to secure than the market admits.</span>
@@ -103,15 +117,23 @@ export default function SolarRecruiterPage() {
 
             <div className="space-y-6 text-lg opacity-80 leading-relaxed font-medium">
               <p>
-                The strongest professionals in solar are typically already deployed inside active development, EPC, construction, or commercial teams. They are selective, difficult to access, and rarely surfaced through applicant flow alone.
+                The strongest professionals in solar are typically already
+                deployed inside active development, EPC, construction, or
+                commercial teams. They are selective, difficult to access, and
+                rarely surfaced through applicant flow alone.
               </p>
 
               <p>
-                In this market, the wrong hire can create drag across permitting, interconnection, procurement, schedule, field execution, and stakeholder alignment. The right hire can unlock a platform’s ability to scale.
+                In this market, the wrong hire can create drag across
+                permitting, interconnection, procurement, schedule, field
+                execution, and stakeholder alignment. The right hire can unlock
+                a platform’s ability to scale.
               </p>
 
-              <p className="font-serif italic text-xl opacity-100">
-                Successful hiring in solar requires access, calibration, and a search process built around highly relevant operators — not generic recruiting volume.
+              <p className="font-serif text-xl font-medium opacity-100">
+                Successful hiring in solar requires access, calibration, and a
+                search process built around highly relevant operators — not
+                generic recruiting volume.
               </p>
             </div>
           </div>
@@ -202,16 +224,22 @@ export default function SolarRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">
+          <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight mb-8">
             This is not a volume hiring market.
           </h2>
 
           <p className="opacity-80 mb-4 text-lg md:text-xl leading-relaxed font-medium">
-            The strongest solar professionals are usually already operating inside active development, EPC, construction, or commercial environments. They are selective, difficult to access, and rarely persuaded by generic outreach alone.
+            The strongest solar professionals are usually already operating
+            inside active development, EPC, construction, or commercial
+            environments. They are selective, difficult to access, and rarely
+            persuaded by generic outreach alone.
           </p>
 
           <p className="opacity-80 text-lg md:text-xl leading-relaxed font-medium">
-            Meridian Stone Search approaches this market accordingly — through targeted search, role calibration, direct engagement, and a disciplined process built for critical hires rather than applicant flow.
+            Meridian Stone Search approaches this market accordingly — through
+            targeted search, role calibration, direct engagement, and a
+            disciplined process built for critical hires rather than applicant
+            flow.
           </p>
         </section>
 
