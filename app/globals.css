@@ -8,8 +8,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
   --font-serif: var(--font-cormorant);
 }
 
@@ -27,18 +26,14 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans);
+  font-family: var(--font-inter);
 }
 
 .serif-display {
-  font-family: var(--font-serif);
+  font-family: var(--font-cormorant);
   font-style: italic;
 }
 
 .serif-heading {
-  font-family: var(--font-serif);
-}
-
-.mono-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-cormorant);
 }
