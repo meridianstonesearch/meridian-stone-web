@@ -1,4 +1,6 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
+
 export const metadata = {
   title: "Solar Executive Search",
   description:
@@ -18,6 +20,8 @@ export default function SolarRecruiterPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         {/* HERO */}
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
@@ -36,20 +40,20 @@ export default function SolarRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-[7.5rem] font-black uppercase tracking-[-0.06em] leading-[0.88] mb-4 max-w-5xl mx-auto text-balance">
+          <h1 className="text-4xl md:text-[6.5rem] font-black uppercase tracking-[-0.06em] leading-[0.9] mb-4 max-w-5xl mx-auto text-balance">
             The Right Hires in Solar
           </h1>
 
-          <p className="max-w-5xl mx-auto font-serif italic font-medium text-[clamp(3rem,7vw,6rem)] leading-[0.92] tracking-[-0.02em] text-[#111111]/60 mb-8 text-balance">
+          <p className="max-w-5xl mx-auto font-serif italic font-medium text-[clamp(2.4rem,5.8vw,4.8rem)] leading-[0.96] tracking-[-0.015em] text-[#111111]/68 mb-6 text-balance">
             are already building projects.
           </p>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-2xl font-serif font-medium mb-10 opacity-85 leading-[1.15] text-balance">
+          <p className="max-w-3xl mx-auto text-lg md:text-[1.7rem] font-serif font-medium mb-10 opacity-90 leading-[1.15] text-balance">
             Executive search across utility-scale solar, community solar, C&amp;I,
             EPC, and project delivery platforms.
           </p>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">
             Meridian Stone Search partners with developers, EPCs, investors,
             and growth platforms to build high-impact teams across solar
             development, engineering, construction, and executive leadership.
@@ -75,7 +79,7 @@ export default function SolarRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight max-w-4xl mx-auto text-balance">
+            <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight max-w-4xl mx-auto text-balance">
               Solar hiring is no longer just a volume issue. It is an execution issue.
             </h2>
           </div>
@@ -108,7 +112,7 @@ export default function SolarRecruiterPage() {
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-balance">
+              <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight text-balance">
                 Solar platforms do not slow down because they lack interest.
                 <br />
                 <span className="opacity-70">They slow down because leadership, technical judgment, and execution talent are harder to secure than the market admits.</span>
@@ -150,7 +154,7 @@ export default function SolarRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
               Solar mandates across the roles that move projects.
             </h2>
           </div>
@@ -224,7 +228,7 @@ export default function SolarRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight mb-8">
             This is not a volume hiring market.
           </h2>
 
@@ -243,15 +247,15 @@ export default function SolarRecruiterPage() {
           </p>
         </section>
 
-<section className="max-w-5xl mx-auto mb-24 text-center">
-  <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
-    <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
-    <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
-    <a href="/battery-energy-storage-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Battery Storage Search</a>
-    <a href="/epc-construction-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">EPC &amp; Construction Search</a>
-    <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
-  </div>
-</section>
+        <section className="max-w-5xl mx-auto mb-24 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
+            <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
+            <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
+            <a href="/battery-energy-storage-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Battery Storage Search</a>
+            <a href="/epc-construction-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">EPC &amp; Construction Search</a>
+            <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
+          </div>
+        </section>
 
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">Discuss a solar hiring mandate</h2>
