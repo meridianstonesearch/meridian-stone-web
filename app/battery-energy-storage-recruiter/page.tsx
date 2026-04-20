@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -19,6 +20,8 @@ export default function BatteryEnergyStorageRecruiter() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         {/* HERO */}
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
@@ -37,18 +40,18 @@ export default function BatteryEnergyStorageRecruiter() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.92] mb-8 max-w-5xl mx-auto">
             The right hires in BESS <br />
             <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">
               are not coming from job boards.
             </span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">
+          <p className="max-w-3xl mx-auto text-xl md:text-[1.7rem] font-serif italic mb-10 opacity-85">
             Executive search across utility-scale battery storage, solar + storage, and grid infrastructure platforms.
           </p>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">
             Meridian Stone Search partners with developers, EPCs, investors, and growth platforms to build high-impact teams across utility-scale BESS, hybrid solar + storage, and grid-scale infrastructure.
           </p>
 
@@ -68,7 +71,7 @@ export default function BatteryEnergyStorageRecruiter() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
               BESS hiring is one of the most constrained talent markets in energy.
             </h2>
           </div>
@@ -95,7 +98,7 @@ export default function BatteryEnergyStorageRecruiter() {
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+              <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight">
                 Storage projects do not stall because companies lack resumes.
                 <br />
                 <span className="opacity-70">They stall because the right operators are scarce.</span>
@@ -129,7 +132,7 @@ export default function BatteryEnergyStorageRecruiter() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">
               Battery storage mandates across the roles that move projects.
             </h2>
           </div>
@@ -203,7 +206,7 @@ export default function BatteryEnergyStorageRecruiter() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">
+          <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight mb-8">
             This is not a volume hiring market.
           </h2>
 
@@ -216,15 +219,15 @@ export default function BatteryEnergyStorageRecruiter() {
           </p>
         </section>
 
-<section className="max-w-5xl mx-auto mb-24 text-center">
-<div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
-  <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
-  <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
-  <a href="/solar-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Solar Executive Search</a>
-  <a href="/epc-construction-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">EPC &amp; Construction Search</a>
-  <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
-</div>
-</section>
+        <section className="max-w-5xl mx-auto mb-24 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
+            <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
+            <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
+            <a href="/solar-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Solar Executive Search</a>
+            <a href="/epc-construction-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">EPC &amp; Construction Search</a>
+            <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
+          </div>
+        </section>
         
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">Discuss a battery storage search mandate</h2>
