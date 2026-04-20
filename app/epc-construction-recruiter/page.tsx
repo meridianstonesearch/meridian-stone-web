@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -20,6 +21,8 @@ export default function EPCConstructionRecruiterPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search Logo" className="h-24 md:h-36 w-auto object-contain brightness-95" />
@@ -31,13 +34,13 @@ export default function EPCConstructionRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.92] mb-8 max-w-5xl mx-auto">
             The right leaders in EPC <br />
             <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">are what turn projects into operating assets.</span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">Executive search across renewable energy EPC, construction, commissioning, and O&amp;M platforms.</p>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">Meridian Stone Search partners with developers, EPCs, self-perform contractors, and owners to build the project delivery teams that take assets from shovels in the ground to ribbon cutting and long-term performance.</p>
+          <p className="max-w-3xl mx-auto text-xl md:text-[1.7rem] font-serif italic mb-10 opacity-85">Executive search across renewable energy EPC, construction, commissioning, and O&amp;M platforms.</p>
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">Meridian Stone Search partners with developers, EPCs, self-perform contractors, and owners to build the project delivery teams that take assets from shovels in the ground to ribbon cutting and long-term performance.</p>
           <p className="max-w-3xl mx-auto text-sm md:text-base leading-relaxed opacity-60 mt-6">We support targeted search across project management, construction leadership, field operations, commissioning, and O&amp;M — and we can also deploy contract talent across EPC scopes when clients need execution support with speed.</p>
         </section>
 
@@ -49,7 +52,7 @@ export default function EPCConstructionRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">In renewables, project managers, construction managers, and O&amp;M leadership are what turn capital plans into real operating projects.</h2>
+            <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight max-w-4xl mx-auto">In renewables, project managers, construction managers, and O&amp;M leadership are what turn capital plans into real operating projects.</h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium text-center">
@@ -66,7 +69,7 @@ export default function EPCConstructionRecruiterPage() {
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Why This Market Is Different</span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+              <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight">
                 Renewable energy projects do not get built on resumes alone.
                 <br />
                 <span className="opacity-70">They come to life through field leadership, project discipline, and operators who know how to deliver under pressure.</span>
@@ -88,7 +91,7 @@ export default function EPCConstructionRecruiterPage() {
               <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Search Coverage</span>
               <div className="h-px w-10 bg-[#111111]" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">EPC and construction mandates across the roles that drive execution.</h2>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">EPC and construction mandates across the roles that drive execution.</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/50 border border-[#111111]/10 p-10 shadow-sm"><h3 className="text-xl font-black uppercase tracking-tight mb-6">Project &amp; Construction Management</h3><div className="h-px w-8 bg-[#111111]/20 mb-6" /><ul className="space-y-3 text-sm opacity-75 leading-relaxed font-medium"><li>Project Managers</li><li>Senior Project Managers</li><li>Construction Managers</li><li>Project Executives</li><li>Directors of Construction</li></ul></div>
@@ -100,19 +103,19 @@ export default function EPCConstructionRecruiterPage() {
 
         <section className="max-w-5xl mx-auto mb-32 text-center">
           <div className="flex items-center justify-center gap-3 mb-6 opacity-40"><div className="h-px w-10 bg-[#111111]" /><span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Flexible Delivery Support</span><div className="h-px w-10 bg-[#111111]" /></div>
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">We can support permanent hires and contract deployment across EPC scopes.</h2>
+          <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight mb-8">We can support permanent hires and contract deployment across EPC scopes.</h2>
           <p className="opacity-80 mb-4 text-lg md:text-xl leading-relaxed font-medium max-w-4xl mx-auto">Some situations call for retained leadership search. Others require immediate field support, project controls, or execution talent on a contract basis. Meridian Stone Search supports both — helping clients build core leadership while also deploying contract professionals when project pressure requires speed.</p>
         </section>
 
-<section className="max-w-5xl mx-auto mb-24 text-center">
- <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
-  <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
-  <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
-  <a href="/battery-energy-storage-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Battery Storage Search</a>
-  <a href="/solar-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Solar Executive Search</a>
-  <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
-</div>
-</section>
+        <section className="max-w-5xl mx-auto mb-24 text-center">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-sm font-black uppercase tracking-[0.15em]">
+            <a href="/development-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Development Search</a>
+            <a href="/renewable-energy-finance-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Finance Search</a>
+            <a href="/battery-energy-storage-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Battery Storage Search</a>
+            <a href="/solar-recruiter" className="underline opacity-70 hover:opacity-100 transition-all">Solar Executive Search</a>
+            <a href="/roles-and-mandates" className="underline opacity-70 hover:opacity-100 transition-all">Roles &amp; Mandates</a>
+          </div>
+        </section>
 
         <section className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-black mb-4">Discuss an EPC or construction hiring mandate</h2>
