@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 import { ChevronDown } from "lucide-react";
 
@@ -21,6 +22,8 @@ export default function StartASearchPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         <section className="max-w-3xl mx-auto text-center mb-16">
           <div className="mb-10 flex justify-center">
             <img
@@ -38,7 +41,7 @@ export default function StartASearchPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-black leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl font-black leading-tight mb-6 text-balance">
             Tell us what you are building.
           </h1>
 
