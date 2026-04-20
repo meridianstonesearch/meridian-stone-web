@@ -82,14 +82,17 @@ export default function HomePageClient() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h1 className="hero-reveal text-5xl md:text-9xl font-black uppercase tracking-tighter leading-[0.85] mb-8 max-w-6xl">
-              The right direction <br />
-              <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">
-                changes everything.
-              </span>
+            <h1 className="hero-reveal text-5xl md:text-9xl font-black uppercase tracking-[-0.06em] leading-[0.86] mb-4 max-w-6xl text-balance">
+              The Right
+              <br />
+              Direction
             </h1>
 
-            <p className="hero-reveal max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">
+            <p className="hero-reveal font-serif text-4xl md:text-6xl font-medium leading-none tracking-tight text-[#111111]/60 mb-8">
+              changes everything.
+            </p>
+
+            <p className="hero-reveal max-w-3xl mx-auto text-2xl md:text-4xl font-serif font-medium leading-[1.1] mb-8 text-balance">
               We build high-performing teams across solar, storage, and EPC
               platforms nationwide.
             </p>
@@ -169,7 +172,7 @@ export default function HomePageClient() {
           <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">
             Search Models &amp; Process
           </p>
-          <h2 className="text-2xl md:text-3xl font-black mb-4">
+          <h2 className="text-2xl md:text-3xl font-black mb-4 text-balance">
             The way a search is structured changes the quality of access, speed,
             and execution.
           </h2>
@@ -188,7 +191,7 @@ export default function HomePageClient() {
 
         <section className="py-32 px-6 md:px-12 bg-white border-t border-[#111111]/10">
           <div className="max-w-5xl mx-auto text-center space-y-12">
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+            <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-balance">
               The best talent in renewables aren’t applying.
             </h2>
 
@@ -220,9 +223,10 @@ export default function HomePageClient() {
               </span>
             </div>
             <div className="reveal-item space-y-12">
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight border-l border-white/20 pl-8 text-white text-left mb-12">
-                "A meridian stone historically served as a marker of alignment —
-                a fixed point used to guide movement with clarity and precision."
+              <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight border-l border-white/20 pl-8 text-white text-left mb-12 text-balance">
+                “A meridian stone historically served as a marker of alignment —
+                a fixed point used to guide movement with clarity and
+                precision.”
               </h2>
               <div className="space-y-8 text-lg opacity-80 leading-relaxed font-medium text-left">
                 <p>
@@ -244,7 +248,7 @@ export default function HomePageClient() {
                 <p>
                   As the renewable energy sector continues to expand, securing
                   the right talent has never been more critical. We partner with
-                  organizations to scale intelligently—sourcing engineers,
+                  organizations to scale intelligently — sourcing engineers,
                   developers, construction leaders, and finance professionals
                   who are shaping the future of sustainable energy worldwide.
                 </p>
@@ -309,7 +313,7 @@ export default function HomePageClient() {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
               <div>
-                <h2 className="text-4xl md:text-6xl font-light italic font-serif leading-tight mb-8">
+                <h2 className="text-4xl md:text-6xl font-serif font-medium leading-tight mb-8 text-balance">
                   Search coverage across the renewable energy lifecycle.
                 </h2>
                 <p className="text-lg md:text-xl opacity-80 leading-relaxed font-medium max-w-2xl">
@@ -380,7 +384,7 @@ export default function HomePageClient() {
                 relationships were not built through volume — they were built
                 through discretion, consistency, and results.
               </p>
-              <p className="font-bold text-[#111111] opacity-100 italic font-serif">
+              <p className="font-serif font-medium text-[#111111] opacity-100">
                 Meridian Stone Search partners with organizations navigating
                 growth, transformation, or pivotal leadership transitions —
                 ensuring each hire reinforces direction, culture, and execution.
@@ -405,7 +409,7 @@ export default function HomePageClient() {
                   Founder
                 </span>
               </div>
-              <h3 className="text-5xl font-black uppercase tracking-tighter italic font-serif">
+              <h3 className="text-5xl font-black uppercase tracking-tighter">
                 Ian Farber
               </h3>
               <div className="space-y-6 text-lg opacity-80 leading-relaxed font-medium">
@@ -421,7 +425,7 @@ export default function HomePageClient() {
                   He specializes in targeted, lifecycle-driven searches spanning
                   early-stage development through engineering, procurement, and
                   construction. Ian has successfully placed professionals at
-                  every level—from Project Engineers and Interconnection
+                  every level — from Project Engineers and Interconnection
                   Managers to senior leadership and C-suite executives. His
                   consultative approach enables him to deeply understand
                   organizational structures, operational priorities, and
@@ -439,8 +443,9 @@ export default function HomePageClient() {
                 </p>
                 <p>
                   Ian’s philosophy centers on building genuine, trust-based
-                  partnerships—serving as a strategic extension of his clients’
-                  teams to ensure clarity, alignment, and lasting impact.
+                  partnerships — serving as a strategic extension of his
+                  clients’ teams to ensure clarity, alignment, and lasting
+                  impact.
                 </p>
               </div>
               <div className="pt-8 flex flex-col gap-6">
@@ -477,7 +482,7 @@ export default function HomePageClient() {
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">
                   For Organizations
                 </span>
-                <span className="mt-4 text-2xl font-serif italic opacity-60 group-hover:opacity-100">
+                <span className="mt-4 text-2xl font-serif font-medium opacity-70 group-hover:opacity-100">
                   Scale Your Platform
                 </span>
               </button>
@@ -492,7 +497,7 @@ export default function HomePageClient() {
                 <span className="text-[10px] font-black uppercase tracking-[0.3em]">
                   For Talent
                 </span>
-                <span className="mt-4 text-2xl font-serif italic opacity-60 group-hover:opacity-100">
+                <span className="mt-4 text-2xl font-serif font-medium opacity-70 group-hover:opacity-100">
                   Explore Transitions
                 </span>
               </button>
@@ -578,7 +583,7 @@ function ContactOverlay({
 
       <div className="max-w-xl mx-auto mt-20 space-y-16 text-left">
         <div className="space-y-4">
-          <h2 className="text-5xl font-black uppercase italic font-serif">
+          <h2 className="text-5xl font-black uppercase tracking-tight">
             Start a Search
           </h2>
           <p className="text-base opacity-65 leading-relaxed max-w-lg">
