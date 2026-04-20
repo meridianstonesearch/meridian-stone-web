@@ -3,6 +3,16 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import SiteFooter from "@/components/SiteFooter";
+import { GeistSans, GeistMono } from "geist/font";
+import { Cormorant_Garamond } from "next/font/google";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://meridianstonesearch.com"),
@@ -83,11 +93,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${GeistSans.variable} ${GeistMono.variable} ${cormorant.variable}`}
+    >
       <body className="antialiased">
         {children}
         <SiteFooter />
         <Analytics />
+
         <Script
           id="schema-professional-service"
           type="application/ld+json"
@@ -109,19 +123,18 @@ export default function RootLayout({
           data-pid="1cMdga9t1VWMy3tqM"
           data-version="062024"
         />
-
-      <Script
-        id="linkedin-insight"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `_linkedin_partner_id = "7866756"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
-        }}
-      />
-      <Script
-        id="linkedin-insight-src"
-        strategy="afterInteractive"
-        src="https://snap.licdn.com/li.lms-analytics/insight.min.js"
-      />
+        <Script
+          id="linkedin-insight"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `_linkedin_partner_id = "7866756"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id);`,
+          }}
+        />
+        <Script
+          id="linkedin-insight-src"
+          strategy="afterInteractive"
+          src="https://snap.licdn.com/li.lms-analytics/insight.min.js"
+        />
       </body>
     </html>
   );
