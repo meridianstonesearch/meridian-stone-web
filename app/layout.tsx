@@ -3,7 +3,8 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import SiteFooter from "@/components/SiteFooter";
-import { GeistSans, GeistMono } from "geist/font";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { Cormorant_Garamond } from "next/font/google";
 
 const cormorant = Cormorant_Garamond({
