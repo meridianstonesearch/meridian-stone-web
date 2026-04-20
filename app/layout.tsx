@@ -3,13 +3,8 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import SiteFooter from "@/components/SiteFooter";
-import { Inter, Cormorant_Garamond } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+import { GeistSans } from "geist/font/sans";
+import { Cormorant_Garamond } from "next/font/google";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -98,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`${GeistSans.variable} ${cormorant.variable}`}>
       <body className="antialiased font-sans">
         {children}
         <SiteFooter />
