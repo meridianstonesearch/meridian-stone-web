@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -20,6 +21,8 @@ export default function RenewableEnergyFinanceRecruiterPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search Logo" className="h-24 md:h-36 w-auto object-contain brightness-95" />
@@ -31,13 +34,13 @@ export default function RenewableEnergyFinanceRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.92] mb-8 max-w-5xl mx-auto">
             The right leaders in finance <br />
             <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">are what turn project ambition into fundable reality.</span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">Executive search across renewable energy project finance, capital markets, FP&amp;A, structured finance, and platform leadership.</p>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">Meridian Stone Search partners with developers, IPPs, investors, and growth platforms to build the finance teams that underwrite, structure, fund, and scale solar, storage, and infrastructure portfolios.</p>
+          <p className="max-w-3xl mx-auto text-xl md:text-[1.7rem] font-serif italic mb-10 opacity-85">Executive search across renewable energy project finance, capital markets, FP&amp;A, structured finance, and platform leadership.</p>
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">Meridian Stone Search partners with developers, IPPs, investors, and growth platforms to build the finance teams that underwrite, structure, fund, and scale solar, storage, and infrastructure portfolios.</p>
           <p className="max-w-3xl mx-auto text-sm md:text-base leading-relaxed opacity-60 mt-6">We support targeted search across project finance, tax equity and transferability interfaces, debt structuring, capital markets, valuation, portfolio FP&amp;A, asset-backed strategy, and executive finance buildouts — focusing on operators who understand both capital formation and execution risk.</p>
         </section>
 
@@ -49,7 +52,7 @@ export default function RenewableEnergyFinanceRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">Finance hiring in renewables is no longer just about model-building. It is about structuring through uncertainty.</h2>
+            <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight max-w-4xl mx-auto">Finance hiring in renewables is no longer just about model-building. It is about structuring through uncertainty.</h2>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-6 text-lg md:text-xl opacity-80 leading-relaxed font-medium text-center">
@@ -66,7 +69,7 @@ export default function RenewableEnergyFinanceRecruiterPage() {
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Why This Market Is Different</span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+              <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight">
                 Projects do not close because companies have enough spreadsheets.
                 <br />
                 <span className="opacity-70">They close because the right finance leaders know how to price risk, structure capital, and align assumptions with execution.</span>
@@ -88,7 +91,7 @@ export default function RenewableEnergyFinanceRecruiterPage() {
               <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Search Coverage</span>
               <div className="h-px w-10 bg-[#111111]" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">Finance mandates across the roles that fund and scale platforms.</h2>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">Finance mandates across the roles that fund and scale platforms.</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/50 border border-[#111111]/10 p-10 shadow-sm"><h3 className="text-xl font-black uppercase tracking-tight mb-6">Project Finance &amp; Structured Finance</h3><div className="h-px w-8 bg-[#111111]/20 mb-6" /><ul className="space-y-3 text-sm opacity-75 leading-relaxed font-medium"><li>Project Finance Associates / VPs</li><li>Structured Finance</li><li>Tax Equity / Transferability Interface</li><li>Debt Structuring</li><li>Transaction Execution Leadership</li></ul></div>
@@ -104,7 +107,7 @@ export default function RenewableEnergyFinanceRecruiterPage() {
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Search Philosophy</span>
             <div className="h-px w-10 bg-[#111111]" />
           </div>
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">This is not a generic finance hiring market.</h2>
+          <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight mb-8">This is not a generic finance hiring market.</h2>
           <p className="opacity-80 mb-4 text-lg md:text-xl leading-relaxed font-medium">The strongest renewable energy finance professionals are usually already operating inside developers, IPPs, private equity-backed platforms, or infrastructure funds. They are selective, difficult to access, and rarely responsive to undifferentiated outreach.</p>
           <p className="opacity-80 text-lg md:text-xl leading-relaxed font-medium">Meridian Stone Search approaches this market accordingly — through targeted search, role calibration, direct engagement, and a disciplined process built for project-critical and platform-critical hires rather than generic applicant flow.</p>
         </section>
