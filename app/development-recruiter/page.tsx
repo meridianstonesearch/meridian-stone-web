@@ -1,3 +1,4 @@
+import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -20,6 +21,8 @@ export default function DevelopmentRecruiterPage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
+        <InteriorPassThrough />
+
         <section className="max-w-6xl mx-auto text-center mb-32">
           <div className="mb-14 md:mb-16 flex justify-center">
             <img src="/Meridian Stone Search logo.png" alt="Meridian Stone Search Logo" className="h-24 md:h-36 w-auto object-contain brightness-95" />
@@ -31,16 +34,16 @@ export default function DevelopmentRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8 max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.92] mb-8 max-w-5xl mx-auto">
             The right leaders in development <br />
             <span className="font-serif italic font-light lowercase tracking-tight normal-case opacity-70">are what turn land, queue position, and permits into viable projects.</span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-xl md:text-3xl font-serif italic mb-10 opacity-80">
+          <p className="max-w-3xl mx-auto text-xl md:text-[1.7rem] font-serif italic mb-10 opacity-85">
             Executive search across renewable energy development, interconnection, permitting, siting, and origination platforms.
           </p>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-80">
+          <p className="max-w-3xl mx-auto text-lg md:text-xl font-medium leading-relaxed opacity-85">
             Meridian Stone Search partners with developers, IPPs, investors, and growth platforms to build the teams that move solar, storage, and grid-scale projects from greenfield strategy to construction-ready reality.
           </p>
 
@@ -57,7 +60,7 @@ export default function DevelopmentRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight max-w-4xl mx-auto">
               Development hiring is no longer just about pipeline growth. It is about navigating constraint.
             </h2>
           </div>
@@ -76,7 +79,7 @@ export default function DevelopmentRecruiterPage() {
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">Why This Market Is Different</span>
               </div>
 
-              <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight">
+              <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight">
                 Projects do not reach NTP because companies have enough resumes.
                 <br />
                 <span className="opacity-70">They move because the right development leaders know how to solve risk before it compounds.</span>
@@ -99,7 +102,7 @@ export default function DevelopmentRecruiterPage() {
               <div className="h-px w-10 bg-[#111111]" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight leading-tight">Development mandates across the roles that shape project viability.</h2>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-tight">Development mandates across the roles that shape project viability.</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -144,7 +147,7 @@ export default function DevelopmentRecruiterPage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-light italic font-serif leading-tight mb-8">This is not a volume hiring market.</h2>
+          <h2 className="text-3xl md:text-4xl font-light italic font-serif leading-tight mb-8">This is not a volume hiring market.</h2>
           <p className="opacity-80 mb-4 text-lg md:text-xl leading-relaxed font-medium">The strongest development professionals are usually already operating inside active solar, storage, or hybrid portfolios. They are selective, difficult to access, and rarely persuaded by generic outreach or broad applicant funnels.</p>
           <p className="opacity-80 text-lg md:text-xl leading-relaxed font-medium">Meridian Stone Search approaches this market accordingly — through targeted search, role calibration, direct engagement, and a disciplined process built for leadership and project-critical hires rather than applicant flow.</p>
         </section>
