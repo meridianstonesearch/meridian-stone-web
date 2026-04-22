@@ -1,4 +1,3 @@
-import InteriorPassThrough from "@/components/InteriorPassThrough";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
@@ -89,11 +88,9 @@ export default function SalaryGuidePage() {
   return (
     <>
       <SiteNav />
-      <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-40 pb-24">
-        <InteriorPassThrough text="Hiring Intelligence Report" />
-
-        <section className="min-h-[78vh] flex flex-col justify-center items-center text-center max-w-6xl mx-auto pb-12">
-          <div className="flex items-center justify-center gap-3 mb-10 opacity-40">
+      <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-28 pb-24">
+        <section className="min-h-[52vh] flex flex-col justify-center items-center text-center max-w-6xl mx-auto pt-10 pb-6 md:pt-14 md:pb-8">
+          <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
             <div className="h-px w-10 bg-[#111111]" />
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
               Hiring Intelligence Report · April 2026
@@ -101,18 +98,18 @@ export default function SalaryGuidePage() {
             <div className="h-px w-10 bg-[#111111]" />
           </div>
 
-          <h1 className="text-4xl md:text-[5.5rem] font-black uppercase tracking-[-0.06em] leading-[0.9] max-w-5xl mx-auto mb-5 text-balance">
+          <h1 className="text-4xl md:text-[5.5rem] font-black uppercase tracking-[-0.06em] leading-[0.9] max-w-5xl mx-auto mb-4 text-balance">
             2026 BESS &amp; Utility-Scale
             <span className="block font-serif italic font-light normal-case tracking-tight text-[#111111]/70 mt-2 text-[0.8em] leading-[1.02]">
               Hiring Intelligence Report.
             </span>
           </h1>
 
-          <p className="max-w-3xl mx-auto text-lg md:text-[1.7rem] font-serif italic opacity-85 leading-[1.35] mb-10 text-balance">
+          <p className="max-w-3xl mx-auto text-lg md:text-[1.7rem] font-serif italic opacity-85 leading-[1.35] mb-7 text-balance">
             Director-to-VP compensation benchmarks · total rewards structures · utility-scale development, BESS, EPC, and project finance.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 max-w-5xl mx-auto mb-12">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 max-w-5xl mx-auto mb-8">
             {[
               "20+ roles benchmarked",
               "Closed offer data only",
