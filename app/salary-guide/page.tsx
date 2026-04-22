@@ -4,59 +4,85 @@ import SiteNav from "@/components/SiteNav";
 export const metadata = {
   title: "2026 BESS Hiring Intelligence Report",
   description:
-    "Download Meridian Stone Search's 2026 BESS and utility-scale hiring intelligence report with Director-to-VP compensation benchmarks, total comp structures, and market commentary.",
+    "Download Meridian Stone Search's 2026 BESS and utility-scale hiring intelligence report with Director-to-VP compensation benchmarks, total rewards structures, BESS premium analysis, and market commentary.",
   alternates: {
     canonical: "/salary-guide",
   },
   openGraph: {
     title: "2026 BESS Hiring Intelligence Report | Meridian Stone Search",
     description:
-      "Director-to-VP compensation benchmarks, total comp structures, and hiring intelligence across BESS and utility-scale platforms.",
+      "Director-to-VP compensation benchmarks, total rewards structures, BESS premium analysis, and hiring intelligence across utility-scale development, EPC, and project finance.",
     url: "https://meridianstonesearch.com/salary-guide",
   },
 };
 
-const whatsInside = [
+const shifts = [
   {
-    title: "Base Salary Benchmarks",
+    title: "Director bases are up 18 to 24 percent since 2023",
     body:
-      "20+ roles across Development, EPC, Finance, and BESS-specific functions. Percentile ranges, market alignment, and cross-validated compensation context.",
+      "Median Director of Development compensation has moved materially, and companies still pricing against older benchmarks are losing access to the pool they think they are targeting.",
   },
   {
-    title: "Total Compensation Structures",
+    title: "VP compensation has split into two markets",
     body:
-      "Annual bonus targets by level, equity prevalence, and the real tradeoffs candidates evaluate when leaving unvested upside behind.",
+      "Growth-stage developers and larger public or utility-backed platforms can both be competitive, but the structures are different and not interchangeable.",
   },
   {
-    title: "Why Offers Fail",
+    title: "BESS experience carries a structural premium",
     body:
-      "The controllable non-salary factors most often killing finalist processes in 2026 — from timing friction to hybrid expectations and process drag.",
+      "Roles requiring co-location, standalone storage depth, or FERC and NERC fluency are consistently clearing above comparable non-storage roles.",
   },
   {
-    title: "Regional Premiums & YoY Trends",
+    title: "Total compensation is the right metric. Base is not.",
     body:
-      "Regional adjustments across major markets, plus directional compensation movement from 2023 through 2026 for key Director and VP mandates.",
+      "At Director and VP level, bonus design, equity structure, and forfeited upside all influence whether an offer actually closes.",
   },
   {
-    title: "Market Commentary",
+    title: "The supply constraint is getting worse",
     body:
-      "Direct hiring intelligence from active searches and closed placements — what the data misses, where searches stall, and what to expect next.",
+      "The bottleneck in BESS and utility-scale hiring is the size of the qualified senior pool, not the level of recruiting effort being applied to the search.",
   },
 ];
 
-const previewRows = [
-  ["Director of Development", "$148K", "$178K", "$210K", "$240K"],
-  ["Sr. Director of Development", "$178K", "$208K", "$238K", "$265K"],
-  ["VP of Development", "$195K", "$248K", "$305K", "$355K"],
-  ["Head of Origination", "$182K", "$218K", "$252K", "$285K"],
-  ["Director, BESS Engineering", "$162K", "$195K", "$228K", "$265K"],
+const developmentRows = [
+  ["Sr. Project Developer", "$118K", "$138K", "$158K", "$178K", "+14%"],
+  ["Director of Development", "$152K", "$178K", "$212K", "$245K", "+20%"],
+  ["Sr. Director of Development", "$178K", "$210K", "$242K", "$272K", "+22%"],
+  ["VP of Development", "$198K", "$252K", "$308K", "$362K", "+19%"],
+  ["Head of Development", "$205K", "$258K", "$315K", "$370K", "+21%"],
+  ["Director of Origination", "$148K", "$178K", "$210K", "$238K", "+18%"],
+  ["Head of Origination", "$185K", "$222K", "$258K", "$292K", "+23%"],
+  ["Director, Land & Permitting", "$132K", "$158K", "$188K", "$215K", "+12%"],
+  ["Director, Interconnection", "$158K", "$192K", "$228K", "$262K", "+26%"],
 ];
 
-const whoItsFor = [
-  "You are building an offer and want to know if your compensation bands are actually current.",
-  "You lost a finalist recently and suspect the offer structure was part of it.",
-  "You are planning a Director or VP search in Q2 or Q3 and need cleaner budget expectations.",
-  "Your internal benchmark data has not caught up to the 2025–2026 market.",
+const bessRows = [
+  ["BESS Development Manager", "$138K", "$162K", "$190K", "$218K", "+$22K"],
+  ["BESS Engineering Lead", "$152K", "$178K", "$208K", "$238K", "+$28K"],
+  ["Director of Storage Development", "$168K", "$202K", "$240K", "$278K", "+$34K"],
+  ["Director, BESS Asset Management", "$158K", "$185K", "$218K", "$252K", "+$26K"],
+  ["Director, BESS Engineering", "$165K", "$198K", "$235K", "$272K", "+$32K"],
+  ["Sr. Director, Energy Storage", "$188K", "$225K", "$268K", "$308K", "+$36K"],
+  ["VP, Energy Storage", "$208K", "$252K", "$302K", "$352K", "+$40K"],
+  ["Head of Battery Storage", "$222K", "$268K", "$318K", "$372K", "+$44K"],
+];
+
+const offerFails = [
+  "Remote and hybrid inflexibility",
+  "Offer timing that does not match the candidate's timeline",
+  "Title misaligned with actual authority",
+  "Unvested equity forfeiture not addressed",
+  "Pipeline credibility gap",
+];
+
+const regionalRows = [
+  ["Northeast / Mid-Atlantic", "+15 to 22%", "ISO-NE and PJM complexity; COL", "$205K to $218K"],
+  ["California (CAISO)", "+18 to 25%", "CPUC and CEQA depth; COL premium", "$210K to $225K"],
+  ["Texas (ERCOT)", "+8 to 14%", "High project volume; competitive pool", "$192K to $205K"],
+  ["Mid-Continent / PJM", "+2 to 6%", "Strong supply; moderate COL", "$182K to $190K"],
+  ["Mountain West", "+4 to 10%", "WECC expertise; growing density", "$186K to $200K"],
+  ["Southeast", "-2 to +5%", "Growing market; lower COL", "$175K to $188K"],
+  ["Remote, Director+", "+3 to 8%", "Flexibility premium now priced in", "$184K to $194K"],
 ];
 
 export default function SalaryGuidePage() {
@@ -78,22 +104,21 @@ export default function SalaryGuidePage() {
           <h1 className="text-4xl md:text-[5.5rem] font-black uppercase tracking-[-0.06em] leading-[0.9] max-w-5xl mx-auto mb-5 text-balance">
             2026 BESS &amp; Utility-Scale
             <span className="block font-serif italic font-light normal-case tracking-tight text-[#111111]/70 mt-2 text-[0.8em] leading-[1.02]">
-              Hiring Intelligence.
+              Hiring Intelligence Report.
             </span>
           </h1>
 
           <p className="max-w-3xl mx-auto text-lg md:text-[1.7rem] font-serif italic opacity-85 leading-[1.35] mb-10 text-balance">
-            Director-to-VP compensation benchmarks sourced from closed placements and active searches.
-            Not Glassdoor. Not LinkedIn. Real offers.
+            Director-to-VP compensation benchmarks · total rewards structures · utility-scale development, BESS, EPC, and project finance.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 max-w-5xl mx-auto mb-12">
             {[
               "20+ roles benchmarked",
-              "Multi-source verified",
+              "Closed offer data only",
               "Total comp breakdown",
               "BESS premium analysis",
-              "YoY trend review",
+              "YoY trend 2023 to 2026",
             ].map((item) => (
               <div
                 key={item}
@@ -114,23 +139,23 @@ export default function SalaryGuidePage() {
           <div>
             <div className="bg-[#EFEEEA] border-l-[3px] border-[#111111] px-5 py-5 mb-12">
               <p className="text-xs font-black uppercase tracking-[0.08em] mb-1">
-                Not Glassdoor. Not LinkedIn.
+                How this report was built
               </p>
               <p className="text-sm md:text-[15px] leading-relaxed text-[#111111]/70">
-                Consumer salary data is usually too thin and too stale at the Director and VP level. This report is built around closed placements, active searches, and live market calibration from Q4 2025 through Q1 2026.
+                Every range in this report comes from closed offers, not posted salary bands. Meridian Stone Search tracks accepted offers, declined-offer debriefs, candidate intake conversations, active search mandates, and passive candidate response thresholds because what companies want to pay and what the market is clearing are not the same numbers right now.
               </p>
             </div>
 
             <section className="mb-14">
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  What&apos;s Inside
+                  Executive Summary
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
               <div className="space-y-1">
-                {whatsInside.map((item, index) => (
+                {shifts.map((item, index) => (
                   <div key={item.title} className="flex gap-4 border border-[#111111]/10 bg-white px-5 py-5 hover:border-[#111111]/20 transition-all">
                     <div className="font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-[#111111]/40 pt-1 w-7 shrink-0">
                       {String(index + 1).padStart(2, "0")}
@@ -151,14 +176,14 @@ export default function SalaryGuidePage() {
             <section className="mb-14">
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Sample Data — Development Roles
+                  Base Salary Benchmarks — Development
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
               <div className="border border-[#111111]/10 overflow-hidden bg-white">
                 <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
-                  Base Salary Benchmarks · Development · Director &amp; VP Level
+                  Development · Percentile ranges and YoY change
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse text-sm">
@@ -169,19 +194,13 @@ export default function SalaryGuidePage() {
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P50</th>
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P75</th>
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P90</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">YoY</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {previewRows.map((row, index) => (
+                      {developmentRows.map((row, index) => (
                         <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">
-                            {row[0]}
-                            {row[0] === "Director, BESS Engineering" ? (
-                              <span className="ml-2 inline-block bg-[#111111] text-[#F7F6F3] px-2 py-1 align-middle font-mono text-[7px] uppercase tracking-[0.15em] font-bold">
-                                +$32K prem.
-                              </span>
-                            ) : null}
-                          </td>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
                           {row.slice(1).map((cell) => (
                             <td key={cell} className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">
                               {cell}
@@ -192,27 +211,102 @@ export default function SalaryGuidePage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="bg-[#EFEEEA] px-5 py-3 font-mono text-[8px] uppercase tracking-[0.12em] font-bold text-[#111111]/45">
-                  Full report includes EPC, Finance, Asset Management, and BESS-specific roles · 20+ benchmarks total
+              </div>
+            </section>
+
+            <section className="mb-14">
+              <div className="flex items-center gap-3 mb-6 opacity-40">
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
+                  BESS-Specific Premiums
+                </span>
+                <div className="h-px flex-1 bg-[#111111]/10" />
+              </div>
+
+              <div className="border border-[#111111]/10 overflow-hidden bg-white">
+                <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
+                  Storage roles consistently closing above non-storage comparables
                 </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse text-sm">
+                    <thead>
+                      <tr className="bg-[#EFEEEA] border-b border-[#111111]/10">
+                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Role</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P25</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P50</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P75</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P90</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Premium</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {bessRows.map((row, index) => (
+                        <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
+                          {row.slice(1).map((cell) => (
+                            <td key={cell} className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+
+            <section className="mb-14">
+              <div className="flex items-center gap-3 mb-6 opacity-40">
+                <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
+                  Why Offers Fail
+                </span>
+                <div className="h-px flex-1 bg-[#111111]/10" />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+                {offerFails.map((item) => (
+                  <div key={item} className="bg-[#EFEEEA] px-4 py-4 text-sm leading-relaxed flex gap-3">
+                    <span className="opacity-30 font-black">—</span>
+                    <span>{item}</span>
+                  </div>
+                ))}
               </div>
             </section>
 
             <section>
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Who This Is For
+                  Regional Premiums
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-                {whoItsFor.map((item) => (
-                  <div key={item} className="bg-[#EFEEEA] px-4 py-4 text-sm leading-relaxed flex gap-3">
-                    <span className="opacity-30 font-black">—</span>
-                    <span>{item}</span>
-                  </div>
-                ))}
+              <div className="border border-[#111111]/10 overflow-hidden bg-white">
+                <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
+                  Geographic adjustments to median Director base
+                </div>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse text-sm">
+                    <thead>
+                      <tr className="bg-[#EFEEEA] border-b border-[#111111]/10">
+                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Region</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Adj. vs Median</th>
+                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Key Driver</th>
+                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Director P50 Adjusted</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {regionalRows.map((row, index) => (
+                        <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">{row[1]}</td>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 text-[12px] text-[#111111]/70">{row[2]}</td>
+                          <td className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">{row[3]}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </section>
           </div>
@@ -235,12 +329,13 @@ export default function SalaryGuidePage() {
               </h2>
 
               <p className="text-sm leading-relaxed text-[#111111]/70 mb-7">
-                Enter your work email and Ian will receive the request directly. This is built for hiring leaders who want current market calibration, not generic survey data.
+                Enter your work email and Ian will receive the request directly. This is built for hiring leaders who want current market calibration, not stale survey data.
               </p>
 
               <form action="https://formspree.io/f/mdawneod" method="POST" className="space-y-0">
                 <input type="hidden" name="inquiry_type" value="Salary Guide Request" />
                 <input type="hidden" name="guide_name" value="2026 BESS Hiring Intelligence Report" />
+                <input type="hidden" name="message" value="Salary guide request from meridianstonesearch.com/salary-guide" />
 
                 <div className="border-b border-[#111111]/15 focus-within:border-[#111111] transition-colors">
                   <label className="block pt-4 text-[8px] font-mono font-bold uppercase tracking-[0.25em] text-[#111111]/40">
