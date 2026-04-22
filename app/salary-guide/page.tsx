@@ -1,14 +1,14 @@
 import SiteNav from "@/components/SiteNav";
 
 export const metadata = {
-  title: "2026 BESS Hiring Intelligence Report",
+  title: "2026 Hiring Intelligence Report",
   description:
     "Download Meridian Stone Search's 2026 BESS and utility-scale hiring intelligence report with Director-to-VP compensation benchmarks, total rewards structures, BESS premium analysis, and market commentary.",
   alternates: {
     canonical: "/salary-guide",
   },
   openGraph: {
-    title: "2026 BESS Hiring Intelligence Report | Meridian Stone Search",
+    title: "2026 Hiring Intelligence Report | Meridian Stone Search",
     description:
       "Director-to-VP compensation benchmarks, total rewards structures, BESS premium analysis, and hiring intelligence across utility-scale development, EPC, and project finance.",
     url: "https://meridianstonesearch.com/salary-guide",
