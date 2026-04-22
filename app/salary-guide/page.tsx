@@ -15,73 +15,39 @@ export const metadata = {
   },
 };
 
-const shifts = [
+const summaryPoints = [
   {
-    title: "Director bases are up 18 to 24 percent since 2023",
-    body:
-      "Median Director of Development compensation has moved materially, and companies still pricing against older benchmarks are losing access to the pool they think they are targeting.",
+    title: "Director-to-VP compensation benchmarks",
+    body: "Base salary ranges across development, storage, EPC, and finance mandates using closed-offer market data rather than posted salary bands.",
   },
   {
-    title: "VP compensation has split into two markets",
-    body:
-      "Growth-stage developers and larger public or utility-backed platforms can both be competitive, but the structures are different and not interchangeable.",
+    title: "Total rewards structures",
+    body: "Annual bonus targets, equity prevalence, and the real compensation tradeoffs senior candidates evaluate before leaving existing platforms.",
   },
   {
-    title: "BESS experience carries a structural premium",
-    body:
-      "Roles requiring co-location, standalone storage depth, or FERC and NERC fluency are consistently clearing above comparable non-storage roles.",
+    title: "BESS-specific premium analysis",
+    body: "Where storage experience is consistently clearing above comparable non-storage roles — and how much that premium is worth in practice.",
   },
   {
-    title: "Total compensation is the right metric. Base is not.",
-    body:
-      "At Director and VP level, bonus design, equity structure, and forfeited upside all influence whether an offer actually closes.",
-  },
-  {
-    title: "The supply constraint is getting worse",
-    body:
-      "The bottleneck in BESS and utility-scale hiring is the size of the qualified senior pool, not the level of recruiting effort being applied to the search.",
+    title: "Why finalist offers fail",
+    body: "The non-salary variables most often killing Director and VP processes in 2026, from timing drag to title mismatch and forfeited upside.",
   },
 ];
 
-const developmentRows = [
-  ["Sr. Project Developer", "$118K", "$138K", "$158K", "$178K", "+14%"],
-  ["Director of Development", "$152K", "$178K", "$212K", "$245K", "+20%"],
-  ["Sr. Director of Development", "$178K", "$210K", "$242K", "$272K", "+22%"],
-  ["VP of Development", "$198K", "$252K", "$308K", "$362K", "+19%"],
-  ["Head of Development", "$205K", "$258K", "$315K", "$370K", "+21%"],
-  ["Director of Origination", "$148K", "$178K", "$210K", "$238K", "+18%"],
-  ["Head of Origination", "$185K", "$222K", "$258K", "$292K", "+23%"],
-  ["Director, Land & Permitting", "$132K", "$158K", "$188K", "$215K", "+12%"],
-  ["Director, Interconnection", "$158K", "$192K", "$228K", "$262K", "+26%"],
+const previewRows = [
+  ["Director of Development", "$152K", "$178K", "$212K"],
+  ["VP of Development", "$198K", "$252K", "$308K"],
+  ["Director, BESS Engineering", "$165K", "$198K", "$235K"],
+  ["VP, Energy Storage", "$208K", "$252K", "$302K"],
 ];
 
-const bessRows = [
-  ["BESS Development Manager", "$138K", "$162K", "$190K", "$218K", "+$22K"],
-  ["BESS Engineering Lead", "$152K", "$178K", "$208K", "$238K", "+$28K"],
-  ["Director of Storage Development", "$168K", "$202K", "$240K", "$278K", "+$34K"],
-  ["Director, BESS Asset Management", "$158K", "$185K", "$218K", "$252K", "+$26K"],
-  ["Director, BESS Engineering", "$165K", "$198K", "$235K", "$272K", "+$32K"],
-  ["Sr. Director, Energy Storage", "$188K", "$225K", "$268K", "$308K", "+$36K"],
-  ["VP, Energy Storage", "$208K", "$252K", "$302K", "$352K", "+$40K"],
-  ["Head of Battery Storage", "$222K", "$268K", "$318K", "$372K", "+$44K"],
-];
-
-const offerFails = [
-  "Remote and hybrid inflexibility",
-  "Offer timing that does not match the candidate's timeline",
-  "Title misaligned with actual authority",
-  "Unvested equity forfeiture not addressed",
-  "Pipeline credibility gap",
-];
-
-const regionalRows = [
-  ["Northeast / Mid-Atlantic", "+15 to 22%", "ISO-NE and PJM complexity; COL", "$205K to $218K"],
-  ["California (CAISO)", "+18 to 25%", "CPUC and CEQA depth; COL premium", "$210K to $225K"],
-  ["Texas (ERCOT)", "+8 to 14%", "High project volume; competitive pool", "$192K to $205K"],
-  ["Mid-Continent / PJM", "+2 to 6%", "Strong supply; moderate COL", "$182K to $190K"],
-  ["Mountain West", "+4 to 10%", "WECC expertise; growing density", "$186K to $200K"],
-  ["Southeast", "-2 to +5%", "Growing market; lower COL", "$175K to $188K"],
-  ["Remote, Director+", "+3 to 8%", "Flexibility premium now priced in", "$184K to $194K"],
+const reportSections = [
+  "Executive summary and 2026 market shifts",
+  "Development benchmark ranges",
+  "BESS premium analysis",
+  "Regional compensation adjustments",
+  "Offer-structure and close-rate commentary",
+  "Q2 and Q3 hiring outlook",
 ];
 
 export default function SalaryGuidePage() {
@@ -89,7 +55,7 @@ export default function SalaryGuidePage() {
     <>
       <SiteNav />
       <main className="bg-[#F7F6F3] text-[#111111] min-h-screen font-sans px-6 md:px-12 pt-28 pb-24">
-        <section className="min-h-[52vh] flex flex-col justify-center items-center text-center max-w-6xl mx-auto pt-10 pb-6 md:pt-14 md:pb-8">
+        <section className="min-h-[50vh] flex flex-col justify-center items-center text-center max-w-6xl mx-auto pt-10 pb-6 md:pt-14 md:pb-8">
           <div className="flex items-center justify-center gap-3 mb-6 opacity-40">
             <div className="h-px w-10 bg-[#111111]" />
             <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
@@ -126,33 +92,29 @@ export default function SalaryGuidePage() {
               </div>
             ))}
           </div>
-
-          <div className="font-mono text-[8px] uppercase tracking-[0.3em] text-[#111111]/35 animate-pulse">
-            ↓ Get the Report
-          </div>
         </section>
 
         <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-12 lg:gap-20 items-start">
           <div>
             <div className="bg-[#EFEEEA] border-l-[3px] border-[#111111] px-5 py-5 mb-12">
               <p className="text-xs font-black uppercase tracking-[0.08em] mb-1">
-                How this report was built
+                Why this report exists
               </p>
               <p className="text-sm md:text-[15px] leading-relaxed text-[#111111]/70">
-                Every range in this report comes from closed offers, not posted salary bands. Meridian Stone Search tracks accepted offers, declined-offer debriefs, candidate intake conversations, active search mandates, and passive candidate response thresholds because what companies want to pay and what the market is clearing are not the same numbers right now.
+                Most public salary data is too thin and too stale at the Director and VP level. This report is built around closed offers, active searches, and live market calibration from Q4 2025 through Q1 2026.
               </p>
             </div>
 
             <section className="mb-14">
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Executive Summary
+                  What&apos;s Inside
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
               <div className="space-y-1">
-                {shifts.map((item, index) => (
+                {summaryPoints.map((item, index) => (
                   <div key={item.title} className="flex gap-4 border border-[#111111]/10 bg-white px-5 py-5 hover:border-[#111111]/20 transition-all">
                     <div className="font-mono text-[9px] font-bold uppercase tracking-[0.12em] text-[#111111]/40 pt-1 w-7 shrink-0">
                       {String(index + 1).padStart(2, "0")}
@@ -173,14 +135,14 @@ export default function SalaryGuidePage() {
             <section className="mb-14">
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Base Salary Benchmarks — Development
+                  Sample Preview
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
-              <div className="border border-[#111111]/10 overflow-hidden bg-white">
+              <div className="border border-[#111111]/10 overflow-hidden bg-white relative">
                 <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
-                  Development · Percentile ranges and YoY change
+                  Partial preview · full report includes 20+ benchmarked roles
                 </div>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse text-sm">
@@ -190,16 +152,14 @@ export default function SalaryGuidePage() {
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P25</th>
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P50</th>
                         <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P75</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P90</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">YoY</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {developmentRows.map((row, index) => (
+                      {previewRows.map((row, index) => (
                         <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
                           <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
                           {row.slice(1).map((cell) => (
-                            <td key={cell} className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">
+                            <td key={cell} className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65 blur-[1.5px] select-none">
                               {cell}
                             </td>
                           ))}
@@ -208,102 +168,25 @@ export default function SalaryGuidePage() {
                     </tbody>
                   </table>
                 </div>
-              </div>
-            </section>
-
-            <section className="mb-14">
-              <div className="flex items-center gap-3 mb-6 opacity-40">
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  BESS-Specific Premiums
-                </span>
-                <div className="h-px flex-1 bg-[#111111]/10" />
-              </div>
-
-              <div className="border border-[#111111]/10 overflow-hidden bg-white">
-                <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
-                  Storage roles consistently closing above non-storage comparables
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse text-sm">
-                    <thead>
-                      <tr className="bg-[#EFEEEA] border-b border-[#111111]/10">
-                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Role</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P25</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P50</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P75</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">P90</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Premium</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {bessRows.map((row, index) => (
-                        <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
-                          {row.slice(1).map((cell) => (
-                            <td key={cell} className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">
-                              {cell}
-                            </td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </section>
-
-            <section className="mb-14">
-              <div className="flex items-center gap-3 mb-6 opacity-40">
-                <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Why Offers Fail
-                </span>
-                <div className="h-px flex-1 bg-[#111111]/10" />
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
-                {offerFails.map((item) => (
-                  <div key={item} className="bg-[#EFEEEA] px-4 py-4 text-sm leading-relaxed flex gap-3">
-                    <span className="opacity-30 font-black">—</span>
-                    <span>{item}</span>
-                  </div>
-                ))}
+                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none" />
               </div>
             </section>
 
             <section>
               <div className="flex items-center gap-3 mb-6 opacity-40">
                 <span className="font-mono text-[10px] uppercase tracking-[0.3em] font-bold">
-                  Regional Premiums
+                  The Full Report Covers
                 </span>
                 <div className="h-px flex-1 bg-[#111111]/10" />
               </div>
 
-              <div className="border border-[#111111]/10 overflow-hidden bg-white">
-                <div className="bg-[#111111] text-[#F7F6F3] px-5 py-3 font-mono text-[8px] md:text-[9px] uppercase tracking-[0.2em] font-bold">
-                  Geographic adjustments to median Director base
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse text-sm">
-                    <thead>
-                      <tr className="bg-[#EFEEEA] border-b border-[#111111]/10">
-                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Region</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Adj. vs Median</th>
-                        <th className="px-4 py-3 text-left text-[10px] uppercase tracking-[0.05em] font-black">Key Driver</th>
-                        <th className="px-4 py-3 text-center text-[10px] uppercase tracking-[0.05em] font-black">Director P50 Adjusted</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {regionalRows.map((row, index) => (
-                        <tr key={row[0]} className={index % 2 === 0 ? "bg-white" : "bg-[#F7F6F3]"}>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 font-bold text-[13px]">{row[0]}</td>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">{row[1]}</td>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 text-[12px] text-[#111111]/70">{row[2]}</td>
-                          <td className="px-4 py-3 border-b border-[#111111]/10 text-center font-mono text-[11px] text-[#111111]/65">{row[3]}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-1">
+                {reportSections.map((item) => (
+                  <div key={item} className="bg-[#EFEEEA] px-4 py-4 text-sm leading-relaxed flex gap-3">
+                    <span className="opacity-30 font-black">—</span>
+                    <span>{item}</span>
+                  </div>
+                ))}
               </div>
             </section>
           </div>
