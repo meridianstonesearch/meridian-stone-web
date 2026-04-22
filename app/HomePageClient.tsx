@@ -189,6 +189,43 @@ export default function HomePageClient() {
           </a>
         </section>
 
+        <section className="max-w-5xl mx-auto mb-24 text-center border border-black/10 bg-[#EFEEEA] px-8 py-12">
+          <p className="text-[10px] uppercase tracking-[0.3em] opacity-40 mb-4">
+            Hiring Intelligence Report
+          </p>
+          <h2 className="text-2xl md:text-3xl font-black mb-4 text-balance">
+            2026 BESS &amp; Utility-Scale compensation benchmarks.
+          </h2>
+          <p className="max-w-3xl mx-auto text-lg leading-relaxed font-serif italic opacity-80 mb-4 text-balance">
+            Director-to-VP compensation data built from closed offers, active searches, and real market calibration.
+          </p>
+          <p className="opacity-70 mb-8 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+            Download Meridian Stone Search’s benchmark report covering total rewards structures, BESS premium analysis, regional adjustments, and why finalist offers are failing in 2026.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 mb-8">
+            {[
+              "20+ roles benchmarked",
+              "Closed offer data only",
+              "BESS premium analysis",
+              "YoY trend 2023 to 2026",
+            ].map((item) => (
+              <div
+                key={item}
+                className="font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-[#111111]/50 flex items-center gap-2"
+              >
+                <span className="inline-block h-1 w-1 rounded-full bg-[#111111]/30" />
+                {item}
+              </div>
+            ))}
+          </div>
+          <a
+            href="/salary-guide"
+            className="inline-flex bg-black text-white px-8 py-4 rounded-full text-xs font-black uppercase tracking-widest hover:scale-105 transition-all"
+          >
+            View the Report
+          </a>
+        </section>
+
         <section className="py-32 px-6 md:px-12 bg-white border-t border-[#111111]/10">
           <div className="max-w-5xl mx-auto text-center space-y-12">
             <h2 className="text-3xl md:text-5xl font-serif font-medium leading-tight text-balance">
