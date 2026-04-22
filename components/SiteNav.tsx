@@ -53,19 +53,30 @@ export default function SiteNav({ onConnect }: SiteNavProps) {
           <span className="hidden md:inline">Process</span>
           <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
         </a>
+
+        <a href="/salary-guide" className="group relative hidden xl:inline-flex text-[10px] font-black uppercase tracking-[0.2em] opacity-70 hover:opacity-100 transition-all duration-300 shrink-0">
+          <span>2026 Report</span>
+          <span className="absolute left-0 -bottom-1 h-px w-0 bg-[#111111] transition-all duration-300 group-hover:w-full" />
+        </a>
       </div>
 
-      {onConnect ? (
-        <button onClick={onConnect} className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.16em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg">
-          <span className="md:hidden">Start</span>
-          <span className="hidden md:inline">Start a Search</span>
-        </button>
-      ) : (
-        <a href="/start-a-search" className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.16em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg">
-          <span className="md:hidden">Start</span>
-          <span className="hidden md:inline">Start a Search</span>
+      <div className="flex items-center gap-2 md:gap-3 shrink-0">
+        <a href="/salary-guide" className="hidden md:inline-flex xl:hidden border border-[#111111]/15 px-4 py-2.5 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.16em] md:tracking-[0.2em] hover:bg-[#111111] hover:text-[#F7F6F3] transition-all">
+          2026 Report
         </a>
-      )}
+
+        {onConnect ? (
+          <button onClick={onConnect} className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.16em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg">
+            <span className="md:hidden">Start</span>
+            <span className="hidden md:inline">Start a Search</span>
+          </button>
+        ) : (
+          <a href="/start-a-search" className="shrink-0 bg-[#111111] text-[#F7F6F3] px-4 md:px-6 py-2.5 md:py-3 rounded-full text-[9px] md:text-[10px] font-black uppercase tracking-[0.16em] md:tracking-[0.2em] hover:scale-105 transition-all shadow-lg">
+            <span className="md:hidden">Start</span>
+            <span className="hidden md:inline">Start a Search</span>
+          </a>
+        )}
+      </div>
     </nav>
   );
 }
